@@ -13,13 +13,13 @@ class Form extends React.Component {
     Firebase.initializeApp(config);
 
     this.state = {
-      Leads: [], userIp: ''
+      Leads: []
     };
   }
   componentWillMount(){
+    var userIp = ''
     Promise.resolve( clientIp).then(res => {
-      this.setState({userIp: res})
-     
+      userIp = res
     });
   }
   componentDidMount() {
@@ -57,21 +57,10 @@ class Form extends React.Component {
         <div className="LeadsData">
         {Leads.map(lead => (
             <div
-            key={lead.userDatetime}
+            key={lead.email}
             >
-            
                 <h5>{lead.name}</h5>
-                <p>{lead.email}</p>
-                <button
-                onClick={() => this.removeData(lead)}
-                >
-                Remover
-                </button>
-                <button
-                onClick={() => this.updateData(lead)}
-                >
-                Editar
-                </button>
+                <p>{lead.email}</p>,
             </div>
         ))}
         </div>
@@ -135,19 +124,6 @@ class Form extends React.Component {
     this.refs.userDatetime.value = "";
   };
 
-  removeData = lead => {
-    const { Leads } = this.state;
-    const newState = Leads.filter(data => {
-      return data.userDatetime !== lead.userDatetime;
-    });
-    this.setState({ Leads: newState });
-  };
-
-  updateData = lead => {
-    this.refs.userDatetime.value = lead.userDatetime;
-    this.refs.name.value = lead.name;
-    this.refs.email.value = lead.email;
-  };
 }
 
 export default Form;
