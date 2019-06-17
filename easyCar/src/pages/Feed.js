@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import Form from '../components/Form.js'
 import  CardImage  from '../components/CardImage'
 import "rbx/index.css";
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import './Feed.scss'
 
 class Feed extends Component {

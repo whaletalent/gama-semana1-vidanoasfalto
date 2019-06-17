@@ -3,9 +3,11 @@ import React from "react";
 import Firebase from "firebase";
 import config from "../config/firebase-config";
 import { CSVLink, CSVDownload } from "react-csv";
+import './form.scss'
 
 import dateFormatter from '../Helpers/DateFormatter'
 import clientIp from '../Helpers/ClientIpGetter'
+import { Fieldset, Field, Button, Column, Input } from 'rbx'
 
 class Form extends React.Component {
   constructor(props) {
@@ -50,46 +52,35 @@ class Form extends React.Component {
     const { Leads } = this.state;
     return (
       <div className="LeadsContainer">
-       
-        <h1>Leads Inseridos</h1>
-        
-        <div className="LeadsData">
-        {Leads.map(lead => (
-            <div
-            key={lead.email}
-            >
-                <h5>{lead.name}</h5>
-                <p>{lead.email}</p>,
-            </div>
-        ))}
-        </div>
-        
-            <h1>Ei, tu queres ser um lead?</h1>
             <form onSubmit={this.handleSubmit}>
-             
-                <input type="hidden" ref="userDatetime" />
-                
-                  <label>Coloca teu nome</label>
-                  <input
-                    type="text"
-                    ref="name"
-                    placeholder="Nome"
-                    required
-                  />
-                 
-                  <label>Coloca teu email</label>
-                  <input
-                    type="text"
-                    ref="email"
-                    placeholder="Email"
-                    required
-                  />
-                
-              <button type="submit">
-                Eu quero sim, pfv
-              </button>
+            <Column.Group centered>
+              <Column size="half">
+                <Fieldset>
+                    <Input type="hidden" ref="userDatetime" />
+                      <Input
+                        className="leadCapture"
+                        type="text"
+                        ref="name"
+                        placeholder="Seu Nome"
+                        required
+                      />
+                    
+                      <Input
+                        className="leadCapture"
+                        type="text"
+                        ref="email"
+                        placeholder="email@exemplo.com"
+                        required
+                      />
+                    
+                  <Button type="submit">
+                    Enviar
+                  </Button>
+                </Fieldset>
+              </Column>
+            </Column.Group>
             </form>
-            <CSVLink data={Leads}>Download csv</CSVLink>;
+            {/* <CSVLink data={Leads}>Download csv</CSVLink>; */}
       </div>
     );
   }

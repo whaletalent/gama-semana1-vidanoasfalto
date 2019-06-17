@@ -1,0 +1,14 @@
+.hero-section {
+    position: relative;
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+    height: 60%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  
+    .centered {
+        margin: 10em;
+        position: relative;
+    }
+}
