@@ -8,12 +8,25 @@ export default function Header() {
         <header id="main-header">
             <div className="header-content">
                 <Link to='/'>
-                    <span>Vida No Asfalto</span>
+                    <img src="" alt="Logo vida no asfalto" />
                 </Link>
-                <Link to='/register'>
-                    <span>Registre-se</span>
+                <Link to='/'>
+                    <span className="link">Home</span>
+                </Link>
+                <Link to='/'>
+                    <span className="link">Artigos</span>
+                </Link>
+                <Link to='/quizz'>
+                    <span className="link">Quizz</span>
+                </Link>
+                <Link to='/sobre'>
+                    <span className="link">Sobre</span>
+                </Link>
+                <Link to='/contato'>
+                    <span className="link">Contato</span>
                 </Link>
             </div>
         </header>
     );
 }
+

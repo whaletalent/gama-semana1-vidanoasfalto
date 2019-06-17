@@ -1,16 +1,26 @@
-header#main-header{
-    background-color: #fff;
-    height:72px;
+header#main-header {
+    background-color: #00000f;
+    height: 72px;
     border: 1px solid #DDD;
+
 }
-header#main-header .header-content{
-    width:100%;
+
+header#main-header .header-content {
+    
+    width: 100%;
     max-width: 980px;
     margin: 0 auto;
     height: 72px;
-    padding:0 30px;
-
+    padding: 0 30px;
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+header#main-header .header-content .link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    -webkit-font-smoothing:antialiased !important
 }

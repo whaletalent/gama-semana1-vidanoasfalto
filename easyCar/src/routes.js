@@ -9,6 +9,7 @@ function Routes() {
         <Switch>
             <Route path="/" exact component={Feed} />
             <Route path="/register" component={Register} />
+            
         </Switch>
     )
 }
