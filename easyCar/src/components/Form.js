@@ -74,6 +74,7 @@ class Form extends React.Component {
                     type="text"
                     ref="name"
                     placeholder="Nome"
+                    required
                   />
                  
                   <label>Coloca teu email</label>
@@ -81,6 +82,7 @@ class Form extends React.Component {
                     type="text"
                     ref="email"
                     placeholder="Email"
+                    required
                   />
                 
               <button type="submit">
