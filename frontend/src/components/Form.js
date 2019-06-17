@@ -13,13 +13,13 @@ class Form extends React.Component {
     Firebase.initializeApp(config);
 
     this.state = {
-      Leads: []
+      Leads: [], userIp: ''
     };
   }
   componentWillMount(){
     var userIp = ''
     Promise.resolve( clientIp).then(res => {
-      userIp = res
+      this.setState({userIp: res})
     });
   }
   componentDidMount() {
@@ -51,7 +51,6 @@ class Form extends React.Component {
     return (
       <div className="LeadsContainer">
        
-        
         <h1>Leads Inseridos</h1>
         
         <div className="LeadsData">
@@ -65,7 +64,6 @@ class Form extends React.Component {
         ))}
         </div>
         
-        
             <h1>Ei, tu queres ser um lead?</h1>
             <form onSubmit={this.handleSubmit}>
              
@@ -77,8 +75,7 @@ class Form extends React.Component {
                     ref="name"
                     placeholder="Nome"
                   />
-                
-                
+                 
                   <label>Coloca teu email</label>
                   <input
                     type="text"
@@ -86,7 +83,6 @@ class Form extends React.Component {
                     placeholder="Email"
                   />
                 
-              
               <button type="submit">
                 Eu quero sim, pfv
               </button>
@@ -101,8 +97,7 @@ class Form extends React.Component {
     let name = this.refs.name.value;
     let email = this.refs.email.value;
     let userDatetime 
-    let userIp = this.state.userIp
-    
+    var userIp = this.state.userIp;
 
     if (userDatetime && name && email) {
       const { Leads } = this.state;
@@ -122,8 +117,8 @@ class Form extends React.Component {
     this.refs.name.value = "";
     this.refs.email.value = "";
     this.refs.userDatetime.value = "";
+    console.log(this.state.Leads)
   };
-
 }
 
 export default Form;
