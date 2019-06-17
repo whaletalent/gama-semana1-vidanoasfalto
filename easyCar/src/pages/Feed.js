@@ -1,29 +1,46 @@
 import React, { Component } from 'react'
 import Form from '../components/Form.js'
-import './Feed.css'
+import "rbx/index.css";
+import { Card, Button, Container, Row, Col} from 'react-bootstrap';
+import './Feed.scss'
 
 class Feed extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          cards: [
+              {
+                  title:'Geral',
+                  subtitle:'Porque comprar um carro sei-novo?',
+                  imageUrl: ''
+              },
+              {
+                title:'Categoria',
+                subtitle:'Titulo do Card 2',
+                imageUrl: ''
+            },
+            {
+                title:'Geral',
+                subtitle:'card 3 texto',
+                imageUrl: ''
+            }
+            ]
+        };
+      }
     render(){
         return (
-            <article key="articles">
-                <header>
-                    <section id="article-list">
-                        <div className="article-info">
-                            <span>Título do artigo</span>
+            <div className="feed">
+            {
+                this.state.cards.map(card =>(
+                    <div  className="card"
+                        key={card.id}
+                    >
+                            <h1 className="card-title">{card.title}</h1>
+                            <h2 className="category">{card.subtitle}</h2>
                         </div>
-                    </section>
-                </header>
-                <div className="article-content">
-                    <p>Lorem ipsum dolor 
-                        sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                        mollit anim id est laborum.</p>
-                </div>
-            </article>
+                ))
+            }
+            </div>
         )
     }
 }

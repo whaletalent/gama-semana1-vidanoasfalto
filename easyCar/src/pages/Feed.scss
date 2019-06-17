@@ -1,0 +1,25 @@
+.feed{
+    width: 100%;
+}
+.card{
+    position: relative;
+    margin: 2em;
+    box-sizing: border-box;
+    background-color: gray;
+    background-size: cover;
+    height: 20em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .category{
+        margin: 1em;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .card-title{
+        @extend .category;
+        text-decoration: none;
+    }
+}
