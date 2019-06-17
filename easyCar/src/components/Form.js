@@ -13,13 +13,13 @@ class Form extends React.Component {
     Firebase.initializeApp(config);
 
     this.state = {
-      Leads: [], userIp: ''
+      Leads: []
     };
   }
   componentWillMount(){
     var userIp = ''
     Promise.resolve( clientIp).then(res => {
-      this.setState({userIp: res})
+      userIp = res
     });
   }
   componentDidMount() {
