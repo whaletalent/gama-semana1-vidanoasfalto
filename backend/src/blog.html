@@ -9,11 +9,21 @@
 <body>
     porta horrivel 3333
 
-    <h1>Cadastro do lead no firebase</h1>
+    <h1>Ei, vc tem vontade de ser um Lead?</h1>
     <form action="/addLead" method="POST">
         Bota teu nome completo: <input type="text" name="name" required>
         Bota teu email: <input type="text" name="email" required>
-        <button type="submit">ok</button>
+        <script type="text/javascript">
+        var userip;
+        </script>
+        
+        <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+        
+        <script type="text/javascript">
+            document.write('<input style="display: none" type="text" value='+userip+' name="ip" required>');
+        </script>
+
+        <button type="submit">Eu tenho sim</button>
     </form>
 </body>
 </html>

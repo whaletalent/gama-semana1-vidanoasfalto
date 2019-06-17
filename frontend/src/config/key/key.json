@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "blog-ezcar",
+  "private_key_id": "a325b522181a54a7ce55470d2b5fb8ec033f5b71",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1XkeT4nKymqAE\nQyL2EO/EQMNH1cFi5Xij3ObH6e0mJNgIrDgn5MRFc9Tqh72XSc7c0Y+fh/5b+mVW\ng+/0MFQFYRK5cCRkAYmhI5NOlRlyfR36FN5Q29SJMlrjuaZ8maYbyIwRyNU/p77O\n7cv5+COBCLT18jKrJdRTptzqcyfVrOe4bYh4Pg9kt/wLfiQkungb+MrRquN7SBif\nC+gRxTcYY6JCg2C36+a5cBJuhWT9rSZb4CwguyEGC7Wi03Qtb/H4zez+h9VMieql\nrHcaPZIJ4wSvtNF8U5YKlNiJhaADKzeZVsFAq/PJKPsoSbWI2de0kLli+D/Gv+xB\ns9FCtmHNAgMBAAECggEAFhKrU2wz2VjIMLya/KeDBrd7DLsPFiInVIoF7D6kBghl\n4mhTTUeiO3GlcAWlJUxuSKGYgSnj4v3OZ4EXKvjWwPDXfooPY7xsK5hQzTeIKU7g\n3xa7F8wpSak/NofZo0Bv3uHBakiu61hW+IgoUvvIFmQg4e3gDMRF2whrynzJVE/K\nFMxwmCjIMzZCcw8soIbFns9kkaixSpPf9aWTxtD4tPpIIy4uXIM+E1/um8wuiDer\n7GGZDKNkgYJtV0/30BDckYNs6FvMwJXHMaqAIs6/w+x79kxhztBUV9km2QztjEs5\naC50ASMBsiVfbjf3TP3AQ6QybPEjmVQXc4e8zsyoAQKBgQDs152U1nkbvrqsl5Pa\n0IXmwl2/6zOGdE475L5SCwKINggkUZrdzhQZk7xMvZb4wT9ILNqkscA7IV4Xya0v\ni2/c845QOgyM2+GSwVRp3fg0MFFUbRfWU30pMNS+NxMdfJsVuYZFI8rwuTVDDz0u\njLNUP+ML3aIW1hxpKjwiQqP6DQKBgQDECfFqXnOLRX5IvAP5OefaWbOVhcByv22V\njbQ/nE4f7dDtt7PS8Hevqb8Bp9rVXuTgXVHfTjpIl65sfhUXsml3SYyxs4MULMn8\nwaAldU9MTb/pLIUZGVzfG5BiqR1Onmr5c7f1EJXxsX2N30uEAFp4HPoAKhGVuz2M\nmrQDhlDWwQKBgC3DL6CNnFL/FGS62QfDmMvQrHqjwI3vNRqfhSKnG/MjtYkG94x6\nACo9AHo3e89Oz6JrgEeoTMNgHCUug7cXEyM3MD1SKhChf8Fyd5QJHqc+2sgcWCnC\ncgGefMzQKXJeHD0jXs1HMDQ5JRBzBlhTOWdC/OTTCzmsX0r2rS3VgIeVAoGBAKKR\nCETIHJMSxt10JOtpDI6ysky9RNEjU7GgeCgD63lo0kg/fXzgcrAWWNH7q2ojrjMs\nz/cZPRXzyu4nRECJcBI+yNCX54w0dDAJNU+6z06cbxfjFmCw+qX9iqd2TFpk3psM\nTjGIVn++Szr6P/ov/NX8WYkHWdvMEQdnRv5hROpBAoGAf6huPlunUI4x+OnVxDVA\nZGT6HXXW5YlstB1oQ4jiO8i718mrw3cG3qfYA079p83/K6vM8ZWBTgiKZjNt7dYl\nyIU3oVSqSUgnwz+j3nD0m2bQVEvb1VJ2BnrOvqlMXIXXZB7cg9znepnViuzbGHhE\nZrr45WwiqIFddpNFy1rUeI0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-z53ah@blog-ezcar.iam.gserviceaccount.com",
+  "client_id": "104773488622384960496",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-z53ah%40blog-ezcar.iam.gserviceaccount.com"
+}

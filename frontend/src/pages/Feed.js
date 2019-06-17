@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import Form from '../components/Form.js'
 
 class Feed extends Component {
     render(){
         return (
-            <h1>Feed</h1>
+            <Form></Form>
         )
     }
 }
