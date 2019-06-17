@@ -18,6 +18,8 @@ class Form extends React.Component {
   }
   componentDidMount() {
     this.getUserData();
+    let userIp = clientIp;
+    console.log(userIp)
   }
 
   componentDidUpdate(prevProps, prevState) {
