@@ -1,7 +1,9 @@
+@import '../global.scss';
+
 .hero-section {
     position: relative;
     text-align: center;
-    background-color: grey;
+    background-color: $primary;
     width: 100%;
     height: 60%;
     border-bottom-left-radius: 20%;

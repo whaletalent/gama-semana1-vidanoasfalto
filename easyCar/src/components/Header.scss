@@ -1,0 +1,13 @@
+@import '../global.scss';
+
+.menu{
+    background-color: darken($primary, 30);
+}
+.menu-item{
+    background-color: darken($primary, 30);
+    color: white;
+    &:hover{
+        color: red !important;
+    }
+}
+
