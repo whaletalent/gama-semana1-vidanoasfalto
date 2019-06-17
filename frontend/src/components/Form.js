@@ -13,13 +13,17 @@ class Form extends React.Component {
     Firebase.initializeApp(config);
 
     this.state = {
-      developers: []
+      Leads: [], userIp: ''
     };
+  }
+  componentWillMount(){
+    Promise.resolve( clientIp).then(res => {
+      this.setState({userIp: res})
+     
+    });
   }
   componentDidMount() {
     this.getUserData();
-    let userIp = clientIp;
-    console.log(userIp)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -31,7 +35,7 @@ class Form extends React.Component {
     Firebase.database()
       .ref("/")
       .set(this.state);
-    console.log("DATA SAVED");
+    console.log("Dados salvos");
   };
 
   getUserData = () => {
@@ -40,10 +44,10 @@ class Form extends React.Component {
       const state = snapshot.val();
       this.setState(state);
     });
-    console.log("DATA RETRIEVED");
+    console.log("Dados recebidos");
   };
   render() {
-    const { developers } = this.state;
+    const { Leads } = this.state;
     return (
       <div className="LeadsContainer">
        
@@ -51,20 +55,20 @@ class Form extends React.Component {
         <h1>Leads Inseridos</h1>
         
         <div className="LeadsData">
-        {developers.map(developer => (
+        {Leads.map(lead => (
             <div
-            key={developer.userDatetime}
+            key={lead.userDatetime}
             >
             
-                <h5>{developer.name}</h5>
-                <p>{developer.email}</p>
+                <h5>{lead.name}</h5>
+                <p>{lead.email}</p>
                 <button
-                onClick={() => this.removeData(developer)}
+                onClick={() => this.removeData(lead)}
                 >
                 Remover
                 </button>
                 <button
-                onClick={() => this.updateData(developer)}
+                onClick={() => this.updateData(lead)}
                 >
                 Editar
                 </button>
@@ -98,7 +102,7 @@ class Form extends React.Component {
                 Eu quero sim, pfv
               </button>
             </form>
-            <CSVLink data={developers}>Download csv</CSVLink>;
+            <CSVLink data={Leads}>Download csv</CSVLink>;
       </div>
     );
   }
@@ -107,43 +111,42 @@ class Form extends React.Component {
     event.preventDefault();
     let name = this.refs.name.value;
     let email = this.refs.email.value;
-    let userDatetime = this.refs.userDatetime.value;
-    
+    let userDatetime 
+    let userIp = this.state.userIp
     
 
     if (userDatetime && name && email) {
-      const { developers } = this.state;
-      const devIndex = developers.findIndex(data => {
+      const { Leads } = this.state;
+      const leadIndex = Leads.findIndex(data => {
         return data.userDatetime === userDatetime;
       });
-      developers[devIndex].name = name;
-      developers[devIndex].email = email;
-      this.setState({ developers });
+      Leads[leadIndex].name = name;
+      Leads[leadIndex].email = email;
+      this.setState({ Leads });
     } else if (name && email) {
         
-        const userDatetime = dateFormatter
-      const { developers } = this.state;
-      developers.push({ userDatetime, name, email });
-      this.setState({ developers });
+      const userDatetime = dateFormatter
+      const { Leads } = this.state;
+      Leads.push({ userDatetime, name, email, userIp });
+      this.setState({ Leads });
     }
-    console.log(this.state)
     this.refs.name.value = "";
     this.refs.email.value = "";
     this.refs.userDatetime.value = "";
   };
 
-  removeData = developer => {
-    const { developers } = this.state;
-    const newState = developers.filter(data => {
-      return data.userDatetime !== developer.userDatetime;
+  removeData = lead => {
+    const { Leads } = this.state;
+    const newState = Leads.filter(data => {
+      return data.userDatetime !== lead.userDatetime;
     });
-    this.setState({ developers: newState });
+    this.setState({ Leads: newState });
   };
 
-  updateData = developer => {
-    this.refs.userDatetime.value = developer.userDatetime;
-    this.refs.name.value = developer.name;
-    this.refs.email.value = developer.email;
+  updateData = lead => {
+    this.refs.userDatetime.value = lead.userDatetime;
+    this.refs.name.value = lead.name;
+    this.refs.email.value = lead.email;
   };
 }
 
