@@ -3,7 +3,7 @@ import React from "react";
 import Firebase from "firebase";
 import config from "../config/firebase-config";
 import { CSVLink, CSVDownload } from "react-csv";
-import "./form.scss";
+import "../styles/form.scss";
 
 import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
@@ -54,7 +54,7 @@ class Form extends React.Component {
           <Column.Group centered>
             <Column size="half">
               <Fieldset>
-                <Input type="hidden" ref="userDatetime" />
+                <Input type="hidden" ref="data_hora" />
                 <Input
                   className="leadCapture"
                   type="text"
@@ -76,35 +76,36 @@ class Form extends React.Component {
             </Column>
           </Column.Group>
         </form>
-         <CSVLink id="csv-link" data={Leads}>Download csv</CSVLink>;
+         <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>;
       </div>
     );
   }
 
   handleSubmit = event => {
     event.preventDefault();
-    let name = this.refs.name.value;
     let email = this.refs.email.value;
-    let userDatetime;
-    let userIp = clientIp
+    let nome = this.refs.name.value;
+    let ip = clientIp
+    let tipo = "B2C"
+    let data_hora;
 
-    if (userDatetime && name && email) {
+    if (data_hora && nome && email) {
       const { Leads } = this.state;
-      const leadIndex = Leads.findIndex(data => {
-        return data.userDatetime === userDatetime;
-      });
-      Leads[leadIndex].name = name;
+      Leads[leadIndex].name = nome;
       Leads[leadIndex].email = email;
+      const leadIndex = Leads.findIndex(data => {
+        return data.data_hora === data_hora;
+      });
       this.setState({ Leads });
-    } else if (name && email) {
-      const userDatetime = dateFormatter;
+    } else if (nome && email) {
+      const data_hora = dateFormatter;
       const { Leads } = this.state;
-      Leads.push({ userDatetime, name, email, userIp });
+      Leads.push({ nome, email, ip, tipo, data_hora });
       this.setState({ Leads });
     }
     this.refs.name.value = "";
     this.refs.email.value = "";
-    this.refs.userDatetime.value = "";
+    this.refs.data_hora.value = "";
     console.log(this.state.Leads);
   };
 }

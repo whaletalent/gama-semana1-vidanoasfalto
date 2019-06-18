@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import  CardImage  from '../components/CardImage'
+
 import "rbx/index.css";
-import './Feed.scss'
+import '../styles/Feed.scss'
+import PostCards from '../components/PostCards'
 
 class Feed extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class Feed extends Component {
             cards: [
                 {
                     title: 'Geral',
-                    subtitle: 'Porque comprar um carro sei-novo?',
+                    subtitle: 'Porque comprar um carro semi-novo?',
                     imageUrl: ''
                 },
                 {
@@ -29,18 +30,9 @@ class Feed extends Component {
     render() {
         return (
             <section className="page-content">
-                <CardImage title="titulo" description="Descriçãojksdfgkjfdgjkdfg" imageURL=""/>
+          
                 <div className="feed">
-                    {
-                        this.state.cards.map(card => (
-                            <div className="card"
-                                key={card.id}
-                            >
-                                <h1 className="card-title">{card.title}</h1>
-                                <h2 className="category">{card.subtitle}</h2>
-                            </div>
-                        ))
-                    }
+                    <PostCards></PostCards>
                 </div>
             </section >
         )

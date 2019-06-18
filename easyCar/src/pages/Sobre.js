@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-class Register extends Component {
+class Sobre extends Component {
     render(){
         return (
-            <h1>Register</h1>
+            <h1>Sobre</h1>
         )
     }
 }
 
-export default Register
+export default Sobre

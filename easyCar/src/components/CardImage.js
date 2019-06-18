@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardImage.scss'
+import '../styles/CardImage.scss'
 import Form from '../components/Form'
 
 const CardImage = ({ title, description, imageURL }) => (

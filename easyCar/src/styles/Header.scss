@@ -1,13 +1,19 @@
 @import '../global.scss';
 
 .menu{
+    position: fixed;
+    width: 100%;
     background-color: darken($primary, 30);
+    display: flex;
+    align-items: center;
 }
 .menu-item{
     background-color: darken($primary, 30);
     color: white;
+
     &:hover{
         color: red !important;
+        background-color: darken($primary, 30) !important;
     }
 }
 
