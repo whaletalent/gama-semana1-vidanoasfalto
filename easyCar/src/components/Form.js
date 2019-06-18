@@ -3,11 +3,11 @@ import React from "react";
 import Firebase from "firebase";
 import config from "../config/firebase-config";
 import { CSVLink, CSVDownload } from "react-csv";
-import './form.scss'
+import "./form.scss";
 
-import dateFormatter from '../Helpers/DateFormatter'
-import clientIp from '../Helpers/ClientIpGetter'
-import { Fieldset, Field, Button, Column, Input } from 'rbx'
+import dateFormatter from "../Helpers/DateFormatter";
+import clientIp from "../Helpers/ClientIpGetter";
+import { Fieldset, Field, Button, Column, Input } from "rbx";
 
 class Form extends React.Component {
   constructor(props) {
@@ -18,11 +18,9 @@ class Form extends React.Component {
       Leads: []
     };
   }
-  componentWillMount(){
-    var userIp = ''
-    Promise.resolve( clientIp).then(res => {
-      userIp = res
-    });
+  componentWillMount() {
+    var userIp = clientIp;
+    console.log(userIp)
   }
   componentDidMount() {
     this.getUserData();
@@ -52,35 +50,33 @@ class Form extends React.Component {
     const { Leads } = this.state;
     return (
       <div className="LeadsContainer">
-            <form onSubmit={this.handleSubmit}>
-            <Column.Group centered>
-              <Column size="half">
-                <Fieldset>
-                    <Input type="hidden" ref="userDatetime" />
-                      <Input
-                        className="leadCapture"
-                        type="text"
-                        ref="name"
-                        placeholder="Seu Nome"
-                        required
-                      />
-                    
-                      <Input
-                        className="leadCapture"
-                        type="text"
-                        ref="email"
-                        placeholder="email@exemplo.com"
-                        required
-                      />
-                    
-                  <Button type="submit">
-                    Enviar
-                  </Button>
-                </Fieldset>
-              </Column>
-            </Column.Group>
-            </form>
-            {/* <CSVLink data={Leads}>Download csv</CSVLink>; */}
+        <form onSubmit={this.handleSubmit}>
+          <Column.Group centered>
+            <Column size="half">
+              <Fieldset>
+                <Input type="hidden" ref="userDatetime" />
+                <Input
+                  className="leadCapture"
+                  type="text"
+                  ref="name"
+                  placeholder="Seu Nome"
+                  required
+                />
+
+                <Input
+                  className="leadCapture"
+                  type="text"
+                  ref="email"
+                  placeholder="email@exemplo.com"
+                  required
+                />
+
+                <Button type="submit">Enviar</Button>
+              </Fieldset>
+            </Column>
+          </Column.Group>
+        </form>
+         <CSVLink id="csv-link" data={Leads}>Download csv</CSVLink>;
       </div>
     );
   }
@@ -89,8 +85,8 @@ class Form extends React.Component {
     event.preventDefault();
     let name = this.refs.name.value;
     let email = this.refs.email.value;
-    let userDatetime 
-    var userIp = this.state.userIp;
+    let userDatetime;
+    let userIp = clientIp
 
     if (userDatetime && name && email) {
       const { Leads } = this.state;
@@ -101,8 +97,7 @@ class Form extends React.Component {
       Leads[leadIndex].email = email;
       this.setState({ Leads });
     } else if (name && email) {
-        
-      const userDatetime = dateFormatter
+      const userDatetime = dateFormatter;
       const { Leads } = this.state;
       Leads.push({ userDatetime, name, email, userIp });
       this.setState({ Leads });
@@ -110,7 +105,7 @@ class Form extends React.Component {
     this.refs.name.value = "";
     this.refs.email.value = "";
     this.refs.userDatetime.value = "";
-    console.log(this.state.Leads)
+    console.log(this.state.Leads);
   };
 }
 
