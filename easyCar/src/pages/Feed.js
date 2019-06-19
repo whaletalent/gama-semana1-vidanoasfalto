@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import "rbx/index.css";
 import '../styles/Feed.scss'
@@ -30,12 +30,13 @@ class Feed extends Component {
     }
     render() {
         return (
-            <section className="page-content">
-                
-                <div className="feed">
-                    <PostCards></PostCards>
-                </div>
-            </section >
+            <Fragment>
+                <section className="page-content">
+                    <div className="feed">
+                        <PostCards></PostCards>
+                    </div>
+                </section >
+            </Fragment>
         )
     }
 }

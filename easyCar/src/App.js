@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Popup></Popup>
       <Header/>
-      <CardImage></CardImage>
+      <CardImage title="Titulo do Site" description="Descricao do site"></CardImage>
       <Routes />
       <Footer />
     </BrowserRouter>

@@ -7,7 +7,7 @@ import "../styles/form.scss";
 
 import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
-import { Fieldset, Field, Button, Column, Input } from "rbx";
+import { Fieldset, Button, Column, Input } from "rbx";
 
 class Form extends React.Component {
   constructor(props) {
