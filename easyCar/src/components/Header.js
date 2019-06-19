@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Header.scss'
 import { Link } from 'react-router-dom'
 import { Navbar, Button } from 'rbx'
+import logo from '../assets/logo.svg'
 
 
 export default function Header() {
@@ -9,9 +10,9 @@ export default function Header() {
         <Navbar className="menu">
         <Navbar.Brand>
             <Navbar.Item href="#">
-            <img
-                src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/012013/cars-logo_0.png?itok=DfBpHAUz"
-                alt=""
+            <img className="header-logo"
+                src={logo}
+                alt="Logo vida no asfalto"
                 role="presentation"
                 width="112"
                 height="28"
@@ -21,16 +22,13 @@ export default function Header() {
             
         </Navbar.Brand>
         <Navbar.Menu>
-            <Navbar.Segment align="start">
+            <Navbar.Segment align="start" className="item-container">
             <Link to="/">
                 <Navbar.Item className="menu-item">Home</Navbar.Item>
             </Link>
             <Link to="/artigos">
                 <Navbar.Item className="menu-item">Artigos</Navbar.Item>
-            </Link>
-            <Link to="/quizz">
-                <Navbar.Item className="menu-item">Quizz</Navbar.Item>
-            </Link>
+            </Link>            
             <Link to="/sobre">
                 <Navbar.Item className="menu-item">Sobre</Navbar.Item>
             </Link>

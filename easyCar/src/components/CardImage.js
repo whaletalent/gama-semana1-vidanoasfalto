@@ -2,13 +2,16 @@ import React from 'react';
 import '../styles/CardImage.scss'
 import Form from '../components/Form'
 import { Title } from "rbx";
+import BannerHome from '../assets/BannerHome.png'
 
-const CardImage = ({ title, description, imageURL }) => (
+const CardImage = ({ title, subtitle, imageURL, description  }) => (
     <div class="hero-section">
-        <img src={imageURL} alt="Imagem Card" />
+        <img src={BannerHome} alt="Imagem Card" />
         <div class="centered">
-            <Title>{title}</Title>
-            <Title subtitle size={3}>{description}</Title>
+            <Title className="home-title">{title}</Title>
+            <Title subtitle size={3} className="home-subtitle">{subtitle}</Title>
+            <p>{description}</p>
+
             <Form />
         </div>
     </div>

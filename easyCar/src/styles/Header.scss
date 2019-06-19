@@ -3,17 +3,35 @@
 .menu{
     position: fixed;
     width: 100%;
-    background-color: darken($primary, 30);
+    background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: space-around
+}
+.navbar-menu .item-container{
+    
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .menu-item{
-    background-color: darken($primary, 30);
+    background-color: transparent;
     color: white;
 
-    &:hover{
-        color: red !important;
-        background-color: darken($primary, 30) !important;
-    }
+   
 }
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.todos-links{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+
 

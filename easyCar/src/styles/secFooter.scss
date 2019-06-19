@@ -10,17 +10,32 @@
     padding: 24px 0px
 }
 .main-footer .nsei{
-    width:70%
+    width:70%;
+    
+}
+.main-footer .nsei .footer-div{
+    display: flex;
+    align-content: center;
+    justify-content: space-around
 }
 .main-footer .nsei .footer-content{
-    width:100%;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.main-footer .nsei .social-media{
+    width:50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 15px;
 }
 .main-footer .nsei .footer-logo{
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    width:90px
 }
 
 .main-footer .nsei .footer-content .link {

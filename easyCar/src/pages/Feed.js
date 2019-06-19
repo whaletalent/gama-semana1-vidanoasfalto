@@ -33,7 +33,7 @@ class Feed extends Component {
             <Fragment>
                 <section className="page-content">
                     <div className="feed">
-                        <PostCards></PostCards>
+                        <PostCards/>
                     </div>
                 </section >
             </Fragment>

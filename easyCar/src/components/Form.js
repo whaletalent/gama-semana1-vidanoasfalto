@@ -65,17 +65,18 @@ class Form extends React.Component {
 
                 <Input
                   className="leadCapture"
-                  type="text"
+                  type="email"
                   ref="email"
                   placeholder="email@exemplo.com"
                   required
                 />
 
-                <Button type="submit">Enviar</Button>
+                <Button className="le-boton" type="submit">Enviar</Button>
               </Fieldset>
             </Column>
           </Column.Group>
         </form>
+        <h1 className="promise">prometemos não enviar nenhum tipo de spam :)</h1>
          <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>;
       </div>
     );

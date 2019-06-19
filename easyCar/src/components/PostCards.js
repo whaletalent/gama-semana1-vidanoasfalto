@@ -1,15 +1,21 @@
 import React, { Component, Fragment } from 'react'
 import '../styles/Feed.scss'
 import { Column, Button } from 'rbx'
+import postImage1 from '../assets/postImage1.png'
+import { Link } from 'react-router-dom'
+
 class PostCard extends Component {
+
+
     constructor(props) {
         super(props);
         this.state = {
             cards: [
                 {
-                    title: 'Geral',
-                    subtitle: 'Porque comprar um carro semi-novo?',
-                    imageUrl: ''
+                    title: 'Estradas',
+                    subtitle: 'Estradas são feitas de asfalto ou marshmallow?',
+                    imageUrl: postImage1,
+                    urlArticle: '/artigoteste'
                 },
                 {
                     title: 'Categoria',
@@ -45,12 +51,13 @@ class PostCard extends Component {
                 <Column.Group multiline centered>
                     {
                         this.state.cards.map(card => (
-                            <div className="card"
-                                key={card.id}
-                            >
-                                <h1 className="card-title">{card.title}</h1>
-                                <h2 className="category">{card.subtitle}</h2>
-                            </div>
+                            <Link to={card.urlArticle}>
+                                <div className="card" key={card.id}>
+                                    <img src={card.imageUrl} />
+                                    <h1 className="card-title">{card.title}</h1>
+                                    <h2 className="category">{card.subtitle}</h2>
+                                </div>
+                            </Link>
                         ))
                     }
                 </Column.Group>
