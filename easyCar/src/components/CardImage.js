@@ -8,7 +8,7 @@ const CardImage = ({ title, description, imageURL }) => (
         <div class="centered">
             <h2>{title}</h2>
             <h4>{description}</h4>
-            <Form></Form>
+            <Form />
         </div>
     </div>
 )

@@ -1,6 +1,33 @@
 @import '../global.scss';
 
-.footer{
+
+.main-footer{
     background-color: darken($primary, 30);
     color: white;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 24px 0px
+}
+.main-footer .nsei{
+    width:70%
+}
+.main-footer .nsei .footer-content{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+.main-footer .nsei .footer-logo{
+    padding-bottom: 10px
+}
+
+.main-footer .nsei .footer-content .link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    -webkit-font-smoothing: antialiased !important;
+    align-self: center;
 }
