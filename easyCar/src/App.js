@@ -4,11 +4,13 @@ import Routes from './routes'
 import Header from './components/Header'
 import  CardImage  from './components/CardImage'
 import  Footer  from './components/SecFooter'
+import Popup from './components/Popup'
 
 
 function App() {
   return (
     <BrowserRouter>
+      <Popup></Popup>
       <Header/>
       <CardImage></CardImage>
       <Routes />
