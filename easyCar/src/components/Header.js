@@ -22,7 +22,7 @@ export default function Header() {
             
         </Navbar.Brand>
         <Navbar.Menu>
-            <Navbar.Segment align="start" className="item-container">
+            <Navbar.Segment align="start">
             <Link to="/">
                 <Navbar.Item className="menu-item">Home</Navbar.Item>
             </Link>

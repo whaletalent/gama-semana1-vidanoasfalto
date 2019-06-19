@@ -53,7 +53,7 @@ class Form extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <Column.Group centered>
             <Column size="half">
-              <Fieldset>
+              <Fieldset className="form-fieldset">
                 <Input type="hidden" ref="data_hora" />
                 <Input
                   className="leadCapture"
@@ -71,12 +71,13 @@ class Form extends React.Component {
                   required
                 />
 
-                <Button className="le-boton" type="submit">Enviar</Button>
+                <Button className="le-boton" type="submit">Enviar</Button><br/>
+                <h1 className="promise">prometemos não enviar nenhum tipo de spam :)</h1>
               </Fieldset>
             </Column>
           </Column.Group>
         </form>
-        <h1 className="promise">prometemos não enviar nenhum tipo de spam :)</h1>
+        
          <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>;
       </div>
     );

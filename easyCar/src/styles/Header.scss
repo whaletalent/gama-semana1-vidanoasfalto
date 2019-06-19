@@ -1,37 +1,22 @@
 @import '../global.scss';
 
 .menu{
-    position: fixed;
+    position:fixed;
     width: 100%;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-around
 }
-.navbar-menu .item-container{
-    
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
 
-}
 .menu-item{
     background-color: transparent;
     color: white;
 
    
 }
-.item-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around
-}
-.todos-links{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around
-}
+
+
 
 
 
