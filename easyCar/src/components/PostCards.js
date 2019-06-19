@@ -52,8 +52,7 @@ class PostCard extends Component {
                     {
                         this.state.cards.map(card => (
                             <Link to={card.urlArticle}>
-                                <div className="card" key={card.id}>
-                                    <img src={card.imageUrl} />
+                                <div className="card" key={card.id}>                                    
                                     <h1 className="card-title">{card.title}</h1>
                                     <h2 className="category">{card.subtitle}</h2>
                                 </div>

@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 import "rbx/index.css";
 import '../styles/Feed.scss'
-
+import BannerImage from '../components/BannerImage'
+import Banner from '../assets/BannerImage1.svg'
 
 class Article extends Component {
     constructor(props) {
@@ -21,6 +22,7 @@ class Article extends Component {
 
         return (
             <section className="page-content">
+                <BannerImage imageURL={Banner}/>
 
                 <div className="article-info">
                     <h1 className="title">{this.state.title}</h1>

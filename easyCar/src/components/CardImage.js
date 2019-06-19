@@ -10,9 +10,7 @@ const CardImage = ({ title, subtitle, imageURL, description  }) => (
         <div class="centered">
             <Title className="home-title">{title}</Title>
             <Title subtitle size={3} className="home-subtitle">{subtitle}</Title>
-            <p>{description}</p>
-
-            <Form />
+            <p>{description}</p>            
         </div>
     </div>
 )

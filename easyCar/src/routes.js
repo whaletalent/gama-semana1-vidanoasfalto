@@ -17,7 +17,7 @@ function Routes() {
             <Route path="/quizz" component={Quizz} />
             <Route path="/sobre" component={Sobre} />
             <Route path="/contato" component={Contato} />
-            <Route path="/artigoteste" component={Article} />
+            <Route path="/artigos/teste" component={Article} />
            
   />
         </Switch>
