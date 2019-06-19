@@ -1,0 +1,35 @@
+.popupFragment{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 8888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+    position: relative;
+    box-shadow: 0px 0px 10px;
+    border-radius: .3em;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 25em;
+    width: 40em;
+    background-color: white;
+    z-index: 9999;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position: relative;
+        width: 60%;
+        margin: 2em 2em;
+        justify-content: center;
+    }
+    .image{
+        background-color: grey;
+        position: relative;
+        width: 40%;
+    }
+}

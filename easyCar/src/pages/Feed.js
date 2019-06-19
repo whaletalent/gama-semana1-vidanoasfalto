@@ -4,6 +4,7 @@ import "rbx/index.css";
 import '../styles/Feed.scss'
 import PostCards from '../components/PostCards'
 
+
 class Feed extends Component {
     constructor(props) {
         super(props);
@@ -30,7 +31,7 @@ class Feed extends Component {
     render() {
         return (
             <section className="page-content">
-          
+                
                 <div className="feed">
                     <PostCards></PostCards>
                 </div>
