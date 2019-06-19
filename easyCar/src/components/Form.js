@@ -1,7 +1,7 @@
 import React from "react";
 
 import Firebase from "firebase";
-import config from "../config/firebase-config";
+import firebase from "../config/firebase-config";
 import { CSVLink, CSVDownload } from "react-csv";
 import "../styles/form.scss";
 
@@ -12,16 +12,12 @@ import { Fieldset, Button, Column, Input } from "rbx";
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    Firebase.initializeApp(config);
-
+    
     this.state = {
       Leads: []
     };
   }
-  componentWillMount() {
-    var userIp = clientIp;
-    console.log(userIp)
-  }
+
   componentDidMount() {
     this.getUserData();
   }
@@ -49,7 +45,7 @@ class Form extends React.Component {
   render() {
     const { Leads } = this.state;
     return (
-      <div className="LeadsContainer">
+      <div >
         <form onSubmit={this.handleSubmit}>
           <Column.Group centered>
             <Column size="half">
@@ -70,15 +66,13 @@ class Form extends React.Component {
                   placeholder="email@exemplo.com"
                   required
                 />
-
-                <Button className="le-boton" type="submit">Enviar</Button><br/>
-                <h1 className="promise">prometemos não enviar nenhum tipo de spam :)</h1>
+                <Button color="primary" type="submit">Enviar</Button>
+                <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>;
               </Fieldset>
             </Column>
           </Column.Group>
         </form>
         
-         <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>;
       </div>
     );
   }

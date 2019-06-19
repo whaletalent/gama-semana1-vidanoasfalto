@@ -10,7 +10,7 @@
     position: relative;
     margin: 2em;
     box-sizing: border-box;
-    background-color: $primary;
+    background-color: $default-green;
     background-size: cover;
     height: 15em;
     width: 20em;
@@ -22,9 +22,16 @@
         color: white;
         text-transform: uppercase;
         text-decoration: underline;
+        z-index: 2;
     }
     .card-title{
         @extend .category;
         text-decoration: none;
+        z-index: 2;
+    }
+    img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
 }

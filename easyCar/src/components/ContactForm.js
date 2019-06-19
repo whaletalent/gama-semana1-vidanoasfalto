@@ -13,7 +13,7 @@ class ContactForm extends Component {
                         <Field.Body>
                         <Field>
                             <Control expanded iconLeft>
-                            <Input type="text" placeholder="Nome Completo" />
+                            <Input type="text" placeholder="Nome Completo" color="primary" />
                             </Control>
                         </Field>
                         <Field>
@@ -21,6 +21,7 @@ class ContactForm extends Component {
                             <Input
                                 placeholder="Email@exemplo.com"
                                 type="email"
+                                color="primary"
                             />
                             </Control>
                         </Field>
@@ -37,6 +38,7 @@ class ContactForm extends Component {
                             <Input
                                 placeholder="Assunto da mensagem"
                                 type="text"
+                                color="primary"
                             />
                             </Control>
                             {/* <Help color="danger">This field is required</Help> */}
@@ -51,7 +53,7 @@ class ContactForm extends Component {
                         <Field.Body>
                         <Field>
                             <Control>
-                            <Textarea placeholder="Como podemos ajudá-lo?" />
+                            <Textarea placeholder="Como podemos ajudá-lo?" color="primary"/>
                             </Control>
                         </Field>
                         </Field.Body>
@@ -62,7 +64,7 @@ class ContactForm extends Component {
                         <Field.Body>
                         <Field>
                             <Control>
-                            <Button>Enviar</Button>
+                            <Button color="primary">Enviar</Button>
                             </Control>
                         </Field>
                         </Field.Body>

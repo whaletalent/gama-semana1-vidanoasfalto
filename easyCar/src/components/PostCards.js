@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import '../styles/Feed.scss'
 import { Column, Button } from 'rbx'
-import postImage1 from '../assets/postImage1.png'
 import { Link } from 'react-router-dom'
 
 class PostCard extends Component {
@@ -14,12 +13,12 @@ class PostCard extends Component {
                 {
                     title: 'Estradas',
                     subtitle: 'Estradas são feitas de asfalto ou marshmallow?',
-                    imageUrl: postImage1,
+                    imageUrl: 'https://image.freepik.com/fotos-gratis/raios-de-luz-do-sol-da-manha-perfurando-as-arvores_97378-54.jpg',
                     urlArticle: '/artigoteste'
                 },
                 {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
+                    title: 'Ponteiros de mouse',
+                    subtitle: 'Cursor aparece de forma deselegante',
                     imageUrl: ''
                 },
                 {
@@ -52,7 +51,8 @@ class PostCard extends Component {
                     {
                         this.state.cards.map(card => (
                             <Link to={card.urlArticle}>
-                                <div className="card" key={card.id}>                                    
+                                <div className="card" key={card.id}> 
+                                    <img src={card.imageUrl} />                                 
                                     <h1 className="card-title">{card.title}</h1>
                                     <h2 className="category">{card.subtitle}</h2>
                                 </div>

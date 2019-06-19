@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-
+import Form from '../components/Form'
 class Sobre extends Component {
     render(){
         return (
-            <h1>Sobre</h1>
+            
+            <Form></Form>
         )
     }
 }

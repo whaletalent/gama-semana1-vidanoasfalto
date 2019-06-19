@@ -6,15 +6,18 @@
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
+    .menu-item{
+        background-color: transparent;
+        color: white;
+        &:hover{
+            background-color: transparent;
+            color: $default-yellow;
+        }
+       
+    }
 }
 
-.menu-item{
-    background-color: transparent;
-    color: white;
-
-   
-}
 
 
 
