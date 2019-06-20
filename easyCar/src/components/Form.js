@@ -74,7 +74,7 @@ class Form extends React.Component {
                   placeholder="email@exemplo.com"
                   required
                 />
-                <Field horizontal>
+                {/* <Field horizontal>
                   <Field.Body>
                     <Field narrow>
                       <Control>
@@ -86,7 +86,7 @@ class Form extends React.Component {
                       </Control>
                     </Field>
                   </Field.Body>
-                </Field>
+                </Field> */}
                 <Button color="primary" type="submit">Enviar</Button>
                 <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>
               </Fieldset>
@@ -103,7 +103,8 @@ class Form extends React.Component {
     let email = this.refs.email.value;
     let nome = this.refs.name.value+" "+this.refs.lastName.value;
     let ip = clientIp
-    let tipo = this.refs.member.value
+    //let tipo = this.refs.member.value
+    let tipo = 'B2C'
     let data_hora;
 
     if (data_hora && nome && email) {
