@@ -1,7 +1,7 @@
 import React, {Component }from 'react';
 import '../styles/CardImage.scss'
 import Popup from './Popup'
-import { Title, Button } from "rbx";
+import { Title, Button, Hero, Container } from "rbx";
 import BannerHome from '../assets/BannerHome.png'
 import ModalButton from '../components/ModalButton'
 
@@ -18,14 +18,21 @@ class CardImage extends Component{
         return(
         <div class="hero-section">
             
-        
-            <img src={BannerHome} alt="Imagem Card" />
-            <div class="centered">
-                <Title className="home-title">{this.props.title}</Title>
-                <Title subtitle size={3} className="home-subtitle">{this.props.subtitle}</Title>
-                <p>{this.props.description}</p>          
-                <ModalButton/>
-            </div>
+        <Hero size="large" id="hero">
+            <Hero.Body>
+                <Container textAlign="centered">
+                    <Title id="text"  size={1}>Minha Vida no asfalto</Title>
+                    <Title  id="text" as="h1"  size={1} subtitle>
+                    Clube Exclusivo
+                    </Title>
+                    <Title subtitle size={6} id="textP" subtitle subtitle>
+                    Quer ser um dos primeiros a participar do “Meu Vida no Asfalto”, nosso clube conteudo exclusivo? Os primeiros convites são limitados e o cadastro encerra em xDias.
+Acelere e garanta já o seu lugar!
+                    </Title>
+                    <ModalButton/>
+                </Container>
+            </Hero.Body>
+        </Hero>
         </div>
         )
     }

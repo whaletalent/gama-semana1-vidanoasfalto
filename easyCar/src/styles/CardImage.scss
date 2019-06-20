@@ -1,5 +1,25 @@
 @import '../global.scss';
-
+@media screen and (min-width: 769px) {
+    .hero-body {
+        padding-top: 18em;
+    }
+} 
+#hero{
+    padding-top: 4em;
+    background-image: url('../assets/BannerHome.png');
+    background-origin: initial;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    #text{
+        color: white;
+        text-transform: uppercase;
+    }
+    #textP{
+        color: white;
+        text-transform: none;
+    }
+}
 .hero-section {
     -webkit-font-smoothing: antialiased !important;
     position: relative;

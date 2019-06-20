@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
-import {Card} from 'rbx'
+import {Card, Column} from 'rbx'
 import Form from './Form'
 
 export default class ContainerForm extends Component {
     render(){
         return(
-            <Card id="containerForm">
-                <Form/>
-            </Card>
+            <Column.Group centered>
+                <Column  size='three-fifths'>
+                    <Card id="containerForm">
+                        <Form/>
+                    </Card>
+                </Column>
+            </Column.Group>
         )
     }
 }

@@ -10,3 +10,5 @@ const CALL2A = ({ call, linkURL, writtenLink }) => (
 )
 
 export default CALL2A
+
+
