@@ -113,7 +113,7 @@ Baixe a nossa checklist gratuita e confira como preparar seu carro para o seu pr
     this.refs.email.value = "";
     this.refs.data_hora.value = "";
     console.log(this.state.Leads);
-    window.open("http://oi64.tinypic.com/9azlth.jpg", "_blank")
+    window.open("https://i.ibb.co/3fWkXkh/check-list-viagem-no-feriado.png", "_blank")
   };
 }
 
