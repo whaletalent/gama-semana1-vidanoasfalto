@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
 import CompactPostCards from '../components/CompactPostCard'
 
+
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'

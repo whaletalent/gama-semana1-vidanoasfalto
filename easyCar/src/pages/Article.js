@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
 import CompactPostCards from '../components/CompactPostCard'
-
+import mapRoad from '../assets/mapRoad.png'
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
@@ -48,6 +48,7 @@ class Article extends Component {
                 <div className="article-content">
                     <p className="text-content">{this.state.textContent1}</p><br />
                     <p className="text-content">{this.state.textContent1meio}</p><br />
+                    <img className="imagem" src={mapRoad}/>
                     <h2 className="supertopic">{this.state.topic1}</h2>
                     <p className="text-content">{this.state.textContent2}</p>
                     <h5><span className="subtopic">1 - Não esqueça seu estepe!</span><br /><span className="text-content">{this.state.topic2}</span></h5>
