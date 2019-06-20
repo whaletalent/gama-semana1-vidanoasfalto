@@ -54,3 +54,11 @@ margin:10px 0;
             text-align: center;
         }
     }
+.page-content{
+    padding: 0 6em;
+}
+@media(max-width:600px){
+    .page-content{
+        padding: 0 0em;
+    }
+}
