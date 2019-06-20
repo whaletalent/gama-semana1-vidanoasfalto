@@ -7,6 +7,7 @@ import Quizz from './pages/Quizz'
 import Sobre from './pages/Sobre'
 import Contato from './pages/Contato'
 import Article from './pages/Article.js'
+import Article2 from './pages/Article2.js'
 
 
 function Routes() {
@@ -17,8 +18,8 @@ function Routes() {
             <Route path="/quizz" component={Quizz} />
             <Route path="/sobre" component={Sobre} />
             <Route path="/contato" component={Contato} />
-            <Route path="/artigos/teste" component={Article} />
-           
+            <Route path="/artigos/dicas-para-evitar-imprevistos-durante-a-viagem" component={Article} />
+            <Route path="/artigos/2" component={Article2} />
   />
         </Switch>
     )

@@ -3,6 +3,7 @@
 .feed{
     width: 100%;
     display: flex;
+    font-weight: bold;
 }
 .card{
     position: relative;
@@ -13,6 +14,7 @@
     height: 15em;
     width: 20em;
     display: flex;
+    font-weight: bold;
     flex-direction: column;
     justify-content: flex-end;
     .category{
@@ -26,6 +28,7 @@
         @extend .category;
         text-decoration: none;
         z-index: 2;
+        font-weight: bold;
     }
     img{
         position: absolute;

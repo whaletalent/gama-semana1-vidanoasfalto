@@ -3,7 +3,7 @@ import '../styles/Feed.scss'
 import { Column, Button } from 'rbx'
 import { Link } from 'react-router-dom'
 
-class PostCard extends Component {
+class CompactPostCard extends Component {
 
 
     constructor(props) {
@@ -14,9 +14,7 @@ class PostCard extends Component {
                     title: 'Estradas',
                     subtitle: 'Dicas para evitar imprevistos durante a viagem',
                     imageUrl: 'https://image.freepik.com/fotos-gratis/raios-de-luz-do-sol-da-manha-perfurando-as-arvores_97378-54.jpg',
-
                     urlArticle: '/artigos/dicas-para-evitar-imprevistos-durante-a-viagem'
-
                 },
                 {
                     title: 'Ponteiros de mouse',
@@ -27,22 +25,8 @@ class PostCard extends Component {
                     title: 'Geral',
                     subtitle: 'card 3 texto',
                     imageUrl: ''
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: ''
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: ''
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: ''
-                },
+                }
+                
             ]
         };
     }
@@ -66,4 +50,4 @@ class PostCard extends Component {
         )
     }
 }
-export default PostCard
+export default CompactPostCard
