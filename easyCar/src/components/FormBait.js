@@ -60,7 +60,13 @@ class FormBait extends React.Component {
                   placeholder="Seu Nome"
                   required
                 />
-
+                <Input
+                  id="imputLead"
+                  type="text"
+                  ref="lastName"
+                  placeholder="Sobrenome"
+                  required
+                />
                 <Input
                   id="imputLead"
                   type="email"
@@ -83,7 +89,7 @@ class FormBait extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     let email = this.refs.email.value;
-    let nome = this.refs.name.value;
+    let nome = this.refs.name.value+" "+this.refs.lastName.value;
     let ip = clientIp
     let tipo = "B2C"
     let data_hora;
