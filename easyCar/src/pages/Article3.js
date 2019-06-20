@@ -12,11 +12,11 @@ class Article2 extends Component {
         this.state =
 
             {
-                title: 'As viagens podem não ser baratas, mas não precisam ser caras.',
-                subtitle: 'Ficar atento à questões simples como o uso do cinto pelo passageiro já ajuda a evitar multas.',
+                title: 'Você já pegou um passageiro estranho? Veja algumas reações hilárias!',
+                subtitle: 'Todos os dias, milhões de viagens são feitas no aplicativo, então é de se esperar algumas situações no mínimo engraçadas, confira:',
 
-                topic1: 'Seguir a leis de trânsito',
-                topic2: 'E o apressadinho?',
+                topic1: 'Vida no Asfalto',
+                topic2: '1. Quando André escolheu o caldo de cana a uma corrida?',
                 topic3: 'Economizando seu tempo e dinheiro',
                 topic4: 'Melhorando a comunicação',
                 topic5: 'Uma boa viagem e até a próxima!',
@@ -43,10 +43,12 @@ class Article2 extends Component {
                     <h5 className="subtitle">{this.state.subtitle}</h5>
                 </div>
                 <div className="article-content">
+                <h2 className="subtopic">{this.state.topic1}</h2><br/>
+                <h2 className="supertopic">{this.state.topic2}</h2><br/>
                     <p>{this.state.textContent1}</p><br/>
                     <p>{this.state.textContent2}</p><br/>
                     <p>{this.state.textContent3}</p><br/>
-                    <h2 className="supertopic">{this.state.topic1}</h2><br/>
+                    
                     <p>{this.state.textContent4}</p><br/>
                     <h2 className="supertopic">{this.state.topic2}</h2><br/>  
                     <p>{this.state.textContent5}</p><br/>        

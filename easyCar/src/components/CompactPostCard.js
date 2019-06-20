@@ -14,12 +14,13 @@ class CompactPostCard extends Component {
                     title: 'Estradas',
                     subtitle: 'Dicas para evitar imprevistos durante a viagem',
                     imageUrl: 'https://image.freepik.com/fotos-gratis/raios-de-luz-do-sol-da-manha-perfurando-as-arvores_97378-54.jpg',
-                    urlArticle: '/artigos/dicas-para-evitar-imprevistos-durante-a-viagem'
+                    urlArticle: '/artigos/dicas-para-evitar-imprevistos-durante-a-viagem#Titulo'
                 },
                 {
-                    title: 'Ponteiros de mouse',
-                    subtitle: 'Cursor aparece de forma deselegante',
-                    imageUrl: ''
+                    title: 'Dia a dia com aplicativos',
+                    subtitle: 'Como reduzir o custo das suas corridas nos aplicativos?',
+                    imageUrl: '',
+                    urlArticle: '/artigos/as-viagens-podem-nao-ser-baratas-mas-nao-precisam-ser-caras#Titulo'
                 },
                 {
                     title: 'Geral',
