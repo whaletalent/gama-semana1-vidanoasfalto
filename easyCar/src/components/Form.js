@@ -9,19 +9,18 @@ import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
 import { Fieldset, Button, Column, Input, Title, Field, Control, Label, Radio } from "rbx";
 
+
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    
     this.state = {
       Leads: []
     };
   }
-
   componentDidMount() {
     this.getUserData();
   }
-
+  
   componentDidUpdate(prevProps, prevState) {
     if (prevState !== this.state) {
       this.writeUserData();
@@ -29,11 +28,11 @@ class Form extends React.Component {
   }
   writeUserData = () => {
     Firebase.database()
-      .ref("/")
-      .set(this.state);
+    .ref("/")
+    .set(this.state);
     console.log("Dados salvos");
   };
-
+  
   getUserData = () => {
     let ref = Firebase.database().ref("/");
     ref.on("value", snapshot => {
@@ -57,7 +56,14 @@ class Form extends React.Component {
                   id="imputLead"
                   type="text"
                   ref="name"
-                  placeholder="Seu Nome"
+                  placeholder="Nome"
+                  required
+                />
+                 <Input
+                  id="imputLead"
+                  type="text"
+                  ref="lastName"
+                  placeholder="Sobrenome"
                   required
                 />
 
@@ -68,19 +74,19 @@ class Form extends React.Component {
                   placeholder="email@exemplo.com"
                   required
                 />
-                <Field horizontal>
+                {/* <Field horizontal>
                   <Field.Body>
                     <Field narrow>
                       <Control>
-                        {['Tenho uma frota de veículos', 'Tenho veículo pessoal'].map(value => (
-                          <Label key={value}>
-                            <Radio name="member" value={value} /> {value}
+                        {[{option: "B2B", value: 'Tenho uma frota de veículos'},{option: "B2C", value: 'Tenho veículo pessoal'}].map(value => (
+                          <Label key={value.option}>
+                            <Radio required ref="member" name="member" value={value.option} /> {value.value}
                           </Label>
                         ))}
                       </Control>
                     </Field>
                   </Field.Body>
-                </Field>
+                </Field> */}
                 <Button color="primary" type="submit">Enviar</Button>
                 <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>
               </Fieldset>
@@ -95,9 +101,10 @@ class Form extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     let email = this.refs.email.value;
-    let nome = this.refs.name.value;
+    let nome = this.refs.name.value+" "+this.refs.lastName.value;
     let ip = clientIp
-    let tipo = "B2C"
+    //let tipo = this.refs.member.value
+    let tipo = 'B2C'
     let data_hora;
 
     if (data_hora && nome && email) {
@@ -118,6 +125,8 @@ class Form extends React.Component {
     this.refs.email.value = "";
     this.refs.data_hora.value = "";
     console.log(this.state.Leads);
+    alert('Email cadastrado!')  
+    console.log(tipo)
   };
 }
 

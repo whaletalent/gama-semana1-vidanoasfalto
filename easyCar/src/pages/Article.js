@@ -68,6 +68,7 @@ class Article extends Component {
                     <h2 className="subtopic">{this.state.topic8}</h2>
                     <span className="subtopic">{this.state.textContent5}</span><br />
                     <p className="text-content">{this.state.textContent6}</p><br /><br />
+                    
                     <h2 className="topic">{this.state.topic9}</h2><br />
                     <span className="text-content">{this.state.textContent7}</span><br />
                     <h2 className="topic">{this.state.topic10}</h2><br />
@@ -76,7 +77,7 @@ class Article extends Component {
                 </div>
                 <img className="div-bar" src={divBar} />
                 <h1 className="topic">Leia Também</h1>
-
+                
 
 
             </section >
