@@ -38,15 +38,7 @@ class SecFooter extends Component {
                                     <img src={instagram} />
                                 </a>
                             </div>
-<<<<<<< HEAD
-                        </div>
-                        {/* <div className="copyright">
-                            <span>copyrighted content blablabla ©</span>
-
-                        </div> */}
-=======
                         </div>                        
->>>>>>> 357f0fd555eeb78a3631841eb659eec2ce3af0ce
                     </Content>
                 </Footer>
             </Fragment>
