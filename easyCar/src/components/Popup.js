@@ -3,10 +3,8 @@ import { Button, Title } from "rbx";
 import "../styles/Popup.scss";
 class Popup extends Component {
   render() {
-    function closePopup(show){
-      
-        e.target.parentNode.parentNode.parentNode.style.display = "none";
-        
+    function closePopup(e){
+      e.target.parentNode.parentNode.parentNode.style.display = "none";    
     }
     return (
       <Fragment>
@@ -17,8 +15,9 @@ class Popup extends Component {
             </div>
             <div className="content">
                 <Title>Quer saber mais sobre seu carro? Veja nosso conteúdo especial!</Title>
-                <Button id="botaoPopup" color="primary">Acessar</Button>
-                <Button id="botaoPopup" onClick={closePopup}>Não, Obrigado</Button>
+                <Button id="botaoPopup" color="primary">Tenho uma frota de veículos</Button>
+                <Button id="botaoPopup" color="primary">Veículo pessoal</Button>
+                <Button id="botaoPopup" onClick={closePopup}>voltar</Button>
             </div>
           </div>
         </div>

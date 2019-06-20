@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
 import CompactPostCards from '../components/CompactPostCard'
-
+import BannerMiddle from '../components/BannerMiddle'
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
@@ -61,7 +61,7 @@ class Article extends Component {
                     <h2 className="supertopic">{this.state.topic8}</h2>
                     <span className="subtopic">{this.state.textContent5}</span><br />
                     <p>{this.state.textContent6}</p><br /><br />
-                    <CALL2A className="CTA" linkURL="https://i.ibb.co/GvLFRwF/check-list-viagem-no-feriado.png" writtenLink="Clique aqui para baixar" call="Gostando do conteúdo? Baixe grátis a checklist para não esquecer nada na revisão e de bônus o que você precisa para garantir uma viagem perfeita!" />
+                    <BannerMiddle/>
                     <h2 className="topic">{this.state.topic9}</h2>
                     <span>{this.state.textContent7}</span>
                     <h2 className="topic">{this.state.topic10}</h2>

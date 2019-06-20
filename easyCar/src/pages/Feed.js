@@ -33,7 +33,6 @@ class Feed extends Component {
         return (
             <Fragment>
                 
-                
                     <div className="feed">
                         <PostCards/>
                     </div>

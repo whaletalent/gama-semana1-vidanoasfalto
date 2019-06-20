@@ -14,14 +14,14 @@ class PostCard extends Component {
                     title: 'Estradas',
                     subtitle: 'Dicas para evitar imprevistos durante a viagem',
                     imageUrl: 'https://image.freepik.com/fotos-gratis/raios-de-luz-do-sol-da-manha-perfurando-as-arvores_97378-54.jpg',
-
                     urlArticle: '/artigos/dicas-para-evitar-imprevistos-durante-a-viagem'
 
                 },
                 {
                     title: 'Ponteiros de mouse',
                     subtitle: 'Cursor aparece de forma deselegante',
-                    imageUrl: ''
+                    imageUrl: '',
+                    urlArticle: '/artigos/2'
                 },
                 {
                     title: 'Geral',
