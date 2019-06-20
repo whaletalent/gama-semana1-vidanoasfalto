@@ -56,8 +56,8 @@ class PostCard extends Component {
                                 <div className="card" key={card.id}> 
                                     <img src={card.imageUrl} />    
                                     <div class="postLegend">
-                                        <Title size={6} id="textTitle">{card.title}</Title>
-                                        <Title id="textSubtitle" size={6} subtitle> {card.subtitle}</Title>
+                                        <Title size={7} id="textTitle">{card.title}</Title>
+                                        <Title id="textSubtitle" size={5} subtitle> {card.subtitle}</Title>
                                     </div>                             
                                 </div>
                             </Link>
