@@ -25,31 +25,32 @@ class PostCard extends Component {
 
                 },
                 {
-                    title: 'Ponteiros de mouse',
-                    subtitle: 'Cursor aparece de forma deselegante',
+                    title: 'Dicas',
+                    subtitle: 'Viagens podem não ser baratas, mas não precisam ser caras',
                     imageUrl: post2,
-                    urlArticle: '/artigos/2'
+                    urlArticle: '/artigos/as-viagens-podem-nao-ser-baratas-mas-nao-precisam-ser-caras'
                 },
                 {
-                    title: 'Geral',
-                    subtitle: 'card 3 texto',
+                    title: 'Humor',
+                    subtitle: 'Passageiros Estranhos. Veja essas reações hilárias!',
                     imageUrl: post3,
+                    urlArticle: '/artigos/passageiro-estranho-reacoes-hilarias'
                 },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: post4,
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: post5,
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: post6,
-                },
+                // {
+                //     title: 'Categoria',
+                //     subtitle: 'Titulo do Card 2',
+                //     imageUrl: post4,
+                // },
+                // {
+                //     title: 'Categoria',
+                //     subtitle: 'Titulo do Card 2',
+                //     imageUrl: post5,
+                // },
+                // {
+                //     title: 'Categoria',
+                //     subtitle: 'Titulo do Card 2',
+                //     imageUrl: post6,
+                // },
             ]
         };
     }

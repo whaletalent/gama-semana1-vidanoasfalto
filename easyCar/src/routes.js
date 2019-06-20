@@ -20,7 +20,7 @@ function Routes() {
             <Route path="/contato" component={Contato} />
             <Route path="/artigos/dicas-para-evitar-imprevistos-durante-a-viagem" component={Article} />
             <Route path="/artigos/as-viagens-podem-nao-ser-baratas-mas-nao-precisam-ser-caras" component={Article2} />
-            <Route path="/artigos/3" component={Article3} />
+            <Route path="/artigos/passageiro-estranho-reacoes-hilarias" component={Article3} />
 
         </Switch>
     )

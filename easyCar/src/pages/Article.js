@@ -4,6 +4,7 @@ import checklist from '../assets/check-list-viagem-no-feriado.png'
 import mapRoad from '../assets/mapRoad.png'
 import CALL2A from '../components/CALL2A'
 import FormBait from '../components/FormBait'
+import PostCards from '../components/PostCards'
 
 import "rbx/index.css";
 import '../styles/Article.scss'
@@ -75,9 +76,9 @@ class Article extends Component {
                     <span className="text-content">{this.state.textContent8}</span><br />
                     <span className="text-content">{this.state.topic11}</span><br />
                 </div>
-                {/* <img className="div-bar" src={divBar} />
-                <h1 className="topic">Leia Também</h1> */}
-                
+                <img className="div-bar" src={divBar} />
+                <h1 className="topic">Leia Também</h1>
+                <PostCards></PostCards>
 
 
             </section >
