@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
 import CompactPostCards from '../components/CompactPostCard'
-<<<<<<< HEAD
+
 import BannerMiddle from '../components/BannerMiddle'
-=======
+
 import mapRoad from '../assets/mapRoad.png'
->>>>>>> 3ff273b912aed47a246ddb58fd01635286f04cbc
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
