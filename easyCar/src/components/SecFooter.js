@@ -31,7 +31,7 @@ class SecFooter extends Component {
                                 </Link>
                             </div>
                             <div className="social-media">
-                                <a className="social-logo"target="_blank" href="https://facebook.com.br/vidanoasfalto">
+                                <a className="social-logo"target="_blank" href="https://facebook.com/vidanoasfalto">
                                     <img src={facebook} />
                                 </a>
                                 <a className="social-logo" target="_blank" href="https://instagram.com/vidanoasfalto_">
