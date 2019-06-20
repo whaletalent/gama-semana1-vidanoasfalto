@@ -1,7 +1,11 @@
 .leadCapture{
-    padding: 1em;
+    z-index: 2 !important;
+    padding: 3em;
     #imputLead{
         margin-bottom: 1em;
         margin-top: 1em;
+    }
+    #csv-link{
+        display: none;
     }
 }

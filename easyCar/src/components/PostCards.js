@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import '../styles/Feed.scss'
-import { Column, Button } from 'rbx'
+import { Column, Title } from 'rbx'
 import { Link } from 'react-router-dom'
 
 class PostCard extends Component {
@@ -54,9 +54,11 @@ class PostCard extends Component {
                         this.state.cards.map(card => (
                             <Link to={card.urlArticle}>
                                 <div className="card" key={card.id}> 
-                                    <img src={card.imageUrl} />                                 
-                                    <h1 className="card-title">{card.title}</h1>
-                                    <h2 className="category">{card.subtitle}</h2>
+                                    <img src={card.imageUrl} />    
+                                    <div class="postLegend">
+                                        <Title size={6} id="textTitle">{card.title}</Title>
+                                        <Title id="textSubtitle" size={6} subtitle> {card.subtitle}</Title>
+                                    </div>                             
                                 </div>
                             </Link>
                         ))

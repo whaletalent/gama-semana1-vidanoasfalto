@@ -3,7 +3,7 @@
 .feed{
     width: 100%;
     display: flex;
-    font-weight: bold;
+    //font-weight: bold;
 }
 .card{
     position: relative;
@@ -17,18 +17,20 @@
     font-weight: bold;
     flex-direction: column;
     justify-content: flex-end;
-    .category{
-        margin: 1em;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: underline;
+    .postLegend{
+        padding: 2em;
         z-index: 2;
-    }
-    .card-title{
-        @extend .category;
-        text-decoration: none;
-        z-index: 2;
-        font-weight: bold;
+        background-color: #222222af;
+        #textTitle{
+            text-align: left;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        #textSubtitle{
+            @extend #textTitle;
+            margin-top: .2em;
+        }
     }
     img{
         position: absolute;

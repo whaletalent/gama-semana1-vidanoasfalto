@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
 import CompactPostCards from '../components/CompactPostCard'
 
-import BannerMiddle from '../components/BannerMiddle'
+
 
 import mapRoad from '../assets/mapRoad.png'
 import "rbx/index.css";
@@ -67,7 +67,7 @@ class Article extends Component {
                     <h2 className="supertopic">{this.state.topic8}</h2>
                     <span className="subtopic">{this.state.textContent5}</span><br />
                     <p>{this.state.textContent6}</p><br /><br />
-                    <BannerMiddle/>
+                    
                     <h2 className="topic">{this.state.topic9}</h2>
                     <span className="text-content">{this.state.textContent7}</span>
                     <h2 className="topic">{this.state.topic10}</h2>

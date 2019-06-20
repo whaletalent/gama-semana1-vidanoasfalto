@@ -1,6 +1,7 @@
 @import '../global.scss';
 
 .menu{
+    z-index: 4 !important;
     position:fixed;
     width: 100%;
     background-color: $default-black !important;

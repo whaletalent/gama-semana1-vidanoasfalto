@@ -7,7 +7,9 @@
     display:flex;
     justify-content: space-around;
     align-content: center;
-    padding: 24px 0px
+    padding: 24px 0px;
+    padding-bottom: 8em;
+    z-index: 3 !important;
 }
 .main-footer .nsei{
     width:70%;

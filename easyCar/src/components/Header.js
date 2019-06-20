@@ -9,7 +9,8 @@ export default function Header() {
     return (
         <Navbar className="menu">
         <Navbar.Brand>
-            <Navbar.Item href="#">
+        <Link to="/">
+            <Navbar.Item>
             <img className="header-logo"
                 src={logo}
                 alt="Logo vida no asfalto"
@@ -18,6 +19,7 @@ export default function Header() {
                 height="28"
             />
             </Navbar.Item>
+        </Link>
             <Navbar.Burger className="menu-item"/>
             
         </Navbar.Brand>
