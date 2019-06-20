@@ -49,8 +49,8 @@ class Form extends React.Component {
           <Column.Group centered>
             <Column>
               <Fieldset class="leadCapture">
-              <Title>Quer saber mais sobre seu carro?</Title>
-              <Title subtitle>Veja nosso conteúdo especial!</Title>
+              <Title size={5}>Quer saber mais sobre seu carro?</Title>
+              <Title  size={6} subtitle>Veja nosso conteúdo especial!</Title>
                 <Input type="hidden" ref="data_hora" />
                 <Input
                   id="imputLead"
