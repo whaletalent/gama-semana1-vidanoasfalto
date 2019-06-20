@@ -3,16 +3,16 @@
 .menu{
     position:fixed;
     width: 100%;
-    background-color: transparent;
+    background-color: $default-black !important;
     display: flex;
     align-items: center;
     justify-content: space-around;
     .menu-item{
-        background-color: transparent;
-        color: white;
+        background-color: $default-black !important;
+        color: white !important;
         &:hover{
             background-color: transparent;
-            color: $default-yellow;
+            color: $default-yellow !important;
         }
        
     }

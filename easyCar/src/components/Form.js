@@ -7,7 +7,7 @@ import "../styles/form.scss";
 
 import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
-import { Fieldset, Button, Column, Input } from "rbx";
+import { Fieldset, Button, Column, Input, Title } from "rbx";
 
 class Form extends React.Component {
   constructor(props) {
@@ -50,6 +50,8 @@ class Form extends React.Component {
           <Column.Group centered>
             <Column size="half">
               <Fieldset className="form-fieldset">
+              <Title>Quer saber mais sobre seu carro?</Title>
+              <Title subtitle>Veja nosso conteúdo especial!</Title>
                 <Input type="hidden" ref="data_hora" />
                 <Input
                   className="leadCapture"
