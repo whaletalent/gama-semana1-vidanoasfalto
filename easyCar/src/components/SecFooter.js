@@ -22,10 +22,7 @@ class SecFooter extends Component {
                                 </Link>
                                 <Link to='/'>
                                     <span className="link">Artigos</span>
-                                </Link>
-                                <Link to='/quizz'>
-                                    <span className="link">Quizz</span>
-                                </Link>
+                                </Link>                                
                                 <Link to='/sobre'>
                                     <span className="link">Sobre</span>
                                 </Link>
@@ -41,11 +38,7 @@ class SecFooter extends Component {
                                     <img src={instagram} />
                                 </a>
                             </div>
-                        </div>
-                        <div className="copyright">
-                            <span>copyrighted content blablabla ©</span>
-
-                        </div>
+                        </div>                        
                     </Content>
                 </Footer>
             </Fragment>
