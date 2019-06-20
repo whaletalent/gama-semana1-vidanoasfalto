@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
-import CompactPostCards from '../components/CompactPostCard'
+import PostCards from '../components/PostCards'
 
 
 
@@ -76,7 +76,7 @@ class Article extends Component {
                 </div>
                 <img className="div-bar" src={divBar} />
                 <h1 className="topic">Leia Também</h1>
-                <CompactPostCards />
+                <PostCards/>
 
 
             </section >
