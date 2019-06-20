@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import CALL2A from '../components/CALL2A'
-import PostCards from '../components/PostCards'
-
-
-
+import divBar from '../assets/divBar.svg'
+import checklist from '../assets/check-list-viagem-no-feriado.png'
 import mapRoad from '../assets/mapRoad.png'
+import CALL2A from '../components/CALL2A'
+import FormBait from '../components/FormBait'
+
 import "rbx/index.css";
 import '../styles/Article.scss'
-import divBar from '../assets/divBar.svg'
+
 
 class Article extends Component {
     constructor(props) {
@@ -51,7 +51,8 @@ class Article extends Component {
                 <div className="article-content">
                     <p className="text-content">{this.state.textContent1}</p><br />
                     <p className="text-content">{this.state.textContent1meio}</p><br />
-                    <img className="imagem" src={mapRoad}/><br />
+                    <img className="imagem" src={mapRoad} /><br />
+                    <FormBait />
                     <h2 className="subtopic">{this.state.topic1}</h2><br />
                     <p className="text-content">{this.state.textContent2}</p><br />
                     <h5><span className="subtopic">1 - Não esqueça seu estepe!</span><br /><span className="text-content">{this.state.topic2}</span></h5><br />
@@ -75,8 +76,8 @@ class Article extends Component {
                     <span className="text-content">{this.state.topic11}</span><br />
                 </div>
                 <img className="div-bar" src={divBar} />
-                {/* <h1 className="topic">Leia Também</h1>
-                <PostCards /> */}
+                <h1 className="topic">Leia Também</h1>
+                
 
 
             </section >
