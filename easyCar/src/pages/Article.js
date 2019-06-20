@@ -17,7 +17,7 @@ class Article extends Component {
             {
                 title: 'Dicas para evitar imprevistos durante a viagem',
                 subtitle: 'Fazer um check-up do seu carro é essencial para garantir uma viagem segura e sem imprevistos.',
-                textContent1: 'Mais um feriado se aproximando (20/08 - Corpus Christi) e milhões de pessoas usarão esses dias para descanso ou diversão. O vida no asfalto (VA) vai te ajudar a aproveitar esses momentos e curtir de forma mais segura.',
+                textContent1: 'Mais um feriado se aproximando (20/06 - Corpus Christi) e milhões de pessoas usarão esses dias para descanso ou diversão. O vida no asfalto (VA) vai te ajudar a aproveitar esses momentos e curtir de forma mais segura.',
                 textContent1meio: 'Para muitas pessoas serão 4 dias sem trabalhar, mas é importante que, antes de pegar a estrada, você cheque as condições de segurança do seu carro. Seja para perto ou para longe, fazer a revisão no seu veículo é essencial para garantir uma viagem tranquila. E para que você se lembre de tudo na hora da revisão, fizemos uma lista dos principais pontos para checar antes de pegar a estrada. Confira alguns itens básicos e dicas que às vezes deixamos passar batido:',
                 topic1: 'Pneus',
                 textContent2: 'Ponto clássico de checagem, os pneus, têm fácil visualização, mas o VNA te dá três dicas importantes:',
