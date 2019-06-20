@@ -3,7 +3,7 @@ import '../styles/Feed.scss'
 import { Column, Button } from 'rbx'
 import { Link } from 'react-router-dom'
 
-class PostCard extends Component {
+class CompactPostCard extends Component {
 
 
     constructor(props) {
@@ -25,22 +25,8 @@ class PostCard extends Component {
                     title: 'Geral',
                     subtitle: 'card 3 texto',
                     imageUrl: ''
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: ''
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: ''
-                },
-                {
-                    title: 'Categoria',
-                    subtitle: 'Titulo do Card 2',
-                    imageUrl: ''
-                },
+                }
+                
             ]
         };
     }
@@ -64,4 +50,4 @@ class PostCard extends Component {
         )
     }
 }
-export default PostCard
+export default CompactPostCard
