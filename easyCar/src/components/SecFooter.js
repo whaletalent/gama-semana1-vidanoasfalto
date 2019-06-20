@@ -23,9 +23,6 @@ class SecFooter extends Component {
                                 <Link to='/'>
                                     <span className="link">Artigos</span>
                                 </Link>
-                                <Link to='/quizz'>
-                                    <span className="link">Quizz</span>
-                                </Link>
                                 <Link to='/sobre'>
                                     <span className="link">Sobre</span>
                                 </Link>
@@ -42,10 +39,10 @@ class SecFooter extends Component {
                                 </a>
                             </div>
                         </div>
-                        <div className="copyright">
+                        {/* <div className="copyright">
                             <span>copyrighted content blablabla ©</span>
 
-                        </div>
+                        </div> */}
                     </Content>
                 </Footer>
             </Fragment>
