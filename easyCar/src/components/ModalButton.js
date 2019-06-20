@@ -14,9 +14,6 @@ class MyVerticallyCenteredModal extends React.Component {
         >
             <Form></Form>
              
-          <Modal.Footer>
-            <Button onClick={this.props.onHide}>Não, Obrigado</Button>
-          </Modal.Footer>
         </Modal>
       );
     }
