@@ -52,3 +52,9 @@
     -webkit-font-smoothing: antialiased !important;
     align-self: center;
 }
+
+@media (max-width:600px){
+    .main-footer .nsei .footer-content{
+        display:none;
+    }
+}
