@@ -111,7 +111,9 @@ class FormBait extends React.Component {
     this.refs.name.value = "";
     this.refs.email.value = "";
     this.refs.data_hora.value = "";
+    this.refs.lastName.value = "";
     console.log(this.state.Leads);
+    
     window.open("https://i.ibb.co/3fWkXkh/check-list-viagem-no-feriado.png", "_blank")
   };
 }
