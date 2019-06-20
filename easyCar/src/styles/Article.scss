@@ -1,7 +1,13 @@
 .article-info{
     margin-bottom:40px
 }
-
+.mini-title{
+    font-style:oblique;
+}
+.text-content{
+   text-align:justify;
+   font-weight: bold
+}
 .div-bar{
     width:100%;
     margin-right:10px;
@@ -25,7 +31,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
 }
 .topic{
 font-size:30px;
@@ -41,4 +47,10 @@ margin:10px 0;
     font-size:20px;
     font-weight: bold;
     margin:10px 0;    
+    }
+
+    @media(max-width:600px){
+        .title,.subtitle,.topic,.subtopic,.supertopic{
+            text-align: center;
+        }
     }

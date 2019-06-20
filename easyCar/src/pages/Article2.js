@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
 import CompactPostCards from '../components/CompactPostCard'
 
+
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
 
-class Article extends Component {
+class Article2 extends Component {
     constructor(props) {
         super(props);
         this.state =
@@ -38,7 +39,7 @@ class Article extends Component {
         return (
             <section className="page-content">
 
-                <div className="article-info">
+                <div id="Titulo" className="article-info">
                     <h1 className="title">{this.state.title}</h1>
                     <h5 className="subtitle">{this.state.subtitle}</h5>
                 </div>
@@ -69,4 +70,4 @@ class Article extends Component {
     }
 }
 
-export default Article 
+export default Article2 
