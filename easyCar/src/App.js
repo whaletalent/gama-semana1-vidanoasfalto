@@ -15,7 +15,9 @@ function App() {
       <Popup />
       <Header />
       <CardImage title="Minha Vida no Asfalto" subtitle="Clube Exclusivo" imageURL='./assets/BannerHome.png' description='Quer ser um dos primeiros a participar do "Minha vida no asfalto", nosso clube de conteúdo exclusivo? Os primeiros convites são limitados e o cadastro encerra em X dias. Acelere e garanta já o seu lugar!"' />
-      <Routes />
+      <section className="page-content">
+        <Routes />
+      </section>
       <Footer />
     </BrowserRouter>
   );

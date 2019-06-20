@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/CardImage.scss'
 import Form from '../components/Form'
-import { Title } from "rbx";
+import { Title, Button } from "rbx";
 import BannerHome from '../assets/BannerHome.png'
 
 const CardImage = ({ title, subtitle, imageURL, description  }) => (
@@ -10,7 +10,8 @@ const CardImage = ({ title, subtitle, imageURL, description  }) => (
         <div class="centered">
             <Title className="home-title">{title}</Title>
             <Title subtitle size={3} className="home-subtitle">{subtitle}</Title>
-            <p>{description}</p>            
+            <p>{description}</p>          
+            <Button color="primary">Receber convite</Button>
         </div>
     </div>
 )

@@ -14,7 +14,7 @@ class PostCard extends Component {
                     title: 'Estradas',
                     subtitle: 'Estradas são feitas de asfalto ou marshmallow?',
                     imageUrl: 'https://image.freepik.com/fotos-gratis/raios-de-luz-do-sol-da-manha-perfurando-as-arvores_97378-54.jpg',
-                    urlArticle: '/artigoteste'
+                    urlArticle: '/artigos/teste'
                 },
                 {
                     title: 'Ponteiros de mouse',

@@ -3,7 +3,6 @@ import Form from '../components/Form'
 class Sobre extends Component {
     render(){
         return (
-            
             <Form></Form>
         )
     }

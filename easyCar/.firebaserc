@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "blog-ezcar",
+    "firebase-react-deploy": "blog-ezcar"
+  }
+}
