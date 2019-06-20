@@ -86,7 +86,7 @@ class Form extends React.Component {
                     </Field>
                   </Field.Body>
                 </Field> */}
-                <Button color="primary" type="submit">Enviar</Button>
+                <Button color="primary" size="large" type="submit">Enviar</Button>
                 <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>
               </Fieldset>
             </Column>
