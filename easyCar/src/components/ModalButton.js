@@ -38,7 +38,7 @@ class MyVerticallyCenteredModal extends React.Component {
             color="primary"
             onClick={() => this.setState({ modalShow: true })}
           >
-            Receber Convite
+            CADASTRE-SE
           </Button>
   
           <MyVerticallyCenteredModal

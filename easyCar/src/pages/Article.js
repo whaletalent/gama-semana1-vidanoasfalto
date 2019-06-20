@@ -75,12 +75,7 @@ class Article extends Component {
                     <span className="text-content">{this.state.textContent8}</span><br />
                     <span className="text-content">{this.state.topic11}</span><br />
                 </div>
-<<<<<<< HEAD
                          
-=======
-                {/* <img className="div-bar" src={divBar} />
-                <h1 className="topic">Leia Também</h1> */}
->>>>>>> 297f23e73b9cc640a5f7bd0097c610965a1269f2
                 
 
 
