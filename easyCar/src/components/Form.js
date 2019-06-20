@@ -7,7 +7,7 @@ import "../styles/form.scss";
 
 import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
-import { Fieldset, Button, Column, Input, Title } from "rbx";
+import { Fieldset, Button, Column, Input, Title, Field, Control, Label, Radio } from "rbx";
 
 class Form extends React.Component {
   constructor(props) {
@@ -48,13 +48,13 @@ class Form extends React.Component {
       <div >
         <form onSubmit={this.handleSubmit}>
           <Column.Group centered>
-            <Column size="half">
-              <Fieldset className="form-fieldset">
+            <Column>
+              <Fieldset class="leadCapture">
               <Title>Quer saber mais sobre seu carro?</Title>
               <Title subtitle>Veja nosso conteúdo especial!</Title>
                 <Input type="hidden" ref="data_hora" />
                 <Input
-                  className="leadCapture"
+                  id="imputLead"
                   type="text"
                   ref="name"
                   placeholder="Seu Nome"
@@ -62,12 +62,25 @@ class Form extends React.Component {
                 />
 
                 <Input
-                  className="leadCapture"
+                  id="imputLead"
                   type="email"
                   ref="email"
                   placeholder="email@exemplo.com"
                   required
                 />
+                <Field horizontal>
+                  <Field.Body>
+                    <Field narrow>
+                      <Control>
+                        {['Tenho uma frota de veículos', 'Tenho veículo pessoal'].map(value => (
+                          <Label key={value}>
+                            <Radio name="member" value={value} /> {value}
+                          </Label>
+                        ))}
+                      </Control>
+                    </Field>
+                  </Field.Body>
+                </Field>
                 <Button color="primary" type="submit">Enviar</Button>
                 <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>;
               </Fieldset>
