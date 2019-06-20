@@ -66,15 +66,9 @@ class Article extends Component {
                     <h5><span className="subtopic">2 - Nas rodas de liga leve.</span> <br /><span className="text-content">{this.state.topic4}</span></h5><br />
                     <h5 className="subtopic">Lembre-se: procure um borracheiro caso note alguma dessas características</h5>
                     <h2 className="supertopic">{this.state.topic8}</h2>
-<<<<<<< HEAD
                     <span className="subtopic">{this.state.textContent5}</span><br />
                     <p>{this.state.textContent6}</p><br /><br />
                     <BannerMiddle/>
-=======
-                    <span className="text-content">{this.state.textContent5}</span><br />
-                    <p className="text-content">{this.state.textContent6}</p><br /><br />
-                    <CALL2A className="CTA" linkURL="https://i.ibb.co/GvLFRwF/check-list-viagem-no-feriado.png" writtenLink="Clique aqui para baixar" call="Gostando do conteúdo? Baixe grátis a checklist para não esquecer nada na revisão e de bônus o que você precisa para garantir uma viagem perfeita!" />
->>>>>>> 3ff273b912aed47a246ddb58fd01635286f04cbc
                     <h2 className="topic">{this.state.topic9}</h2>
                     <span className="text-content">{this.state.textContent7}</span>
                     <h2 className="topic">{this.state.topic10}</h2>
