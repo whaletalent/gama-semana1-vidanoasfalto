@@ -12,6 +12,9 @@ class MyVerticallyCenteredModal extends React.Component {
           aria-labelledby="contained-modal-title-vcenter"
           centered
         >
+        <Modal.Header closeButton>
+            <Modal.Title>Acesse nosso conteúdo especial!</Modal.Title>
+          </Modal.Header>
             <Form></Form>
              
         </Modal>
