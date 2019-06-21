@@ -39,6 +39,7 @@ export default function Header() {
             </Link>
                 
             </Navbar.Segment>
+            
         </Navbar.Menu>
         </Navbar>
     );

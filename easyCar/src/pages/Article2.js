@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
 import HeroTitle from '../components/HeroTitle'
-
+import MetaTags from 'react-meta-tags';
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
@@ -22,7 +22,7 @@ class Article2 extends Component {
                 topic3: 'Economizando seu tempo e dinheiro',
                 topic4: 'Melhorando a comunicação',
                 topic5: 'Uma boa viagem e até a próxima!',
-                
+
                 textContent1: 'Os motoristas que trabalham usando aplicativos como Uber, Cabify e 99 já formam uma enorme categoria daqueles que, nos dias e noites levam a vida no asfalto. Esses homens e mulheres utilizam um ou mais aplicativos simultaneamente e, muitas vezes têm dificuldades nas ruas.',
                 textContent2: 'As empresas de transporte compartilhado costumam ajudar a melhorar os serviços dando dicas sobre atendimento para garantir as cinco estrelas tão desejadas. As benditas estrelinhas, não só: mostram ao passageiro qual o melhor atendimento,mas permitem aos motoristas a participação em promoções e atividades que melhoram o ganho em corridas e dias específicos.',
                 textContent3: 'O vida no asfalto se juntou a motoristas para ver um pouco mais sobre o dia a dia usando os aplicativos e resolveu compartilhar um papo que diz respeito não só a quem está por trás do volante, mas também aos passageiros de aplicativos: como reduzir os custos em viagens por aplicativos.',
@@ -32,44 +32,54 @@ class Article2 extends Component {
                 textContent7: 'Seja para você motorista, dono de frota ou usuário que possui carro, os aplicativos não são apenas de corrida compartilhada.  A Easy Carros, por exemplo, já oferece serviços que prezam pela sua comodidade agendando horários e com uma série de facilidades… vale a pena conferir!',
                 textContent8: 'Por fim, para oferecer corridas com qualidade e reduzir custos (financeiros ou psicológicos), o negócio é estabelecer uma boa comunicação com o passageiro. Assim, você terá na prática uma viagem mais tranquila e ainda poderá ganhar suas desejadas estrelinhas. Deseje sempre um bom dia e mantenha um papo leve, percebendo o estado da pessoa que está compartilhando a viagem com você (nem sempre ela vai querer conversar por horas).',
                 textContent9: 'Então, nós do Vida no asfalto de desejamos:',
-                
+
             };
     }
     render() {
 
         return (
             <Fragment>
-            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
-            <section className="page-content">
+                <MetaTags>
+                    <title>As viagens podem não ser baratas, mas não precisam ser caras.</title>
+                    <meta id="meta-description" name="description" content="Ficar atento à questões simples como o uso do cinto pelo passageiro já ajuda a evitar multas." />
+                    <meta id="og-title" property="og:title" content="As viagens podem não ser baratas, mas não precisam ser caras." />
+                    <meta property="og:locale" content="pt_BR" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:site_name" content="Vida no Asfalto" />
+                    <meta property="article:publisher" content="https://www.facebook.com/vidanoasfalto" />
 
-               
-                <div className="article-content">
-                    <p>{this.state.textContent1}</p><br/>
-                    <p>{this.state.textContent2}</p><br/>
-                    <p>{this.state.textContent3}</p><br/>
-                    <h2 className="supertopic">{this.state.topic1}</h2><br/>
-                    <p>{this.state.textContent4}</p><br/>
-                    <h2 className="supertopic">{this.state.topic2}</h2><br/>  
-                    <p>{this.state.textContent5}</p><br/>        
-                    <FormBait 
-                    title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
-                    subtitle="Quer saber mais sobre seu carro?"
-                    buttonMsg="Enviar"
-                    />  
-                    <h2 className="supertopic">{this.state.topic3}</h2><br/> 
-                    <p>{this.state.textContent6}</p><br/>
-                    <p>{this.state.textContent7}</p><br/>   
-                    <h2 className="supertopic">{this.state.topic4}</h2><br/>    
-                    <p>{this.state.textContent8}</p><br/> 
-                    <span className="subtopic">{this.state.topic5}</span><br />
-                    
-                </div>
-                <img className="div-bar" src={divBar} />
-                <h1 className="topic">Leia Também</h1>
-                <PostCards></PostCards>
+                </MetaTags>
+                <HeroTitle title={this.state.title} subtitle={this.state.subtitle}></HeroTitle>
+                <section className="page-content">
 
 
-            </section >
+                    <div className="article-content">
+                        <p>{this.state.textContent1}</p><br />
+                        <p>{this.state.textContent2}</p><br />
+                        <p>{this.state.textContent3}</p><br />
+                        <h2 className="supertopic">{this.state.topic1}</h2><br />
+                        <p>{this.state.textContent4}</p><br />
+                        <h2 className="supertopic">{this.state.topic2}</h2><br />
+                        <p>{this.state.textContent5}</p><br />
+                        <FormBait
+                            title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
+                            subtitle="Quer saber mais sobre seu carro?"
+                            buttonMsg="Enviar"
+                        />
+                        <h2 className="supertopic">{this.state.topic3}</h2><br />
+                        <p>{this.state.textContent6}</p><br />
+                        <p>{this.state.textContent7}</p><br />
+                        <h2 className="supertopic">{this.state.topic4}</h2><br />
+                        <p>{this.state.textContent8}</p><br />
+                        <span className="subtopic">{this.state.topic5}</span><br />
+
+                    </div>
+                    <img className="div-bar" src={divBar} />
+                    <h1 className="topic">Leia Também</h1>
+                    <PostCards></PostCards>
+
+
+                </section >
             </Fragment>
         )
     }

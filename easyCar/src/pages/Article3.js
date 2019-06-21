@@ -11,7 +11,7 @@ import uber6 from "../assets/uber6.png";
 import uberbonus from "../assets/uberbonus.png";
 import uberbonus2 from "../assets/uberbonus2.png";
 import FormBait from "../components/FormBait";
-
+import MetaTags from 'react-meta-tags';
 import "rbx/index.css";
 import "../styles/Article.scss";
 import divBar from "../assets/divBar.svg";
@@ -48,76 +48,86 @@ class Article3 extends Component {
   render() {
     return (
       <Fragment>
-            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
-      <section className="page-content">
-        
-        <div className="article-content">
-          <h2 className="subtopic">{this.state.topic1}</h2>
-          <br />
+        <MetaTags>
+          <title>Você já pegou um passageiro estranho? Veja algumas reações hilárias!</title>
+          <meta id="meta-description" name="description" content="Todos os dias, milhões de viagens são feitas no aplicativo, então é de se esperar algumas situações no mínimo engraçadas, confira:" />
+          <meta id="og-title" property="og:title" content="Você já pegou um passageiro estranho? Veja algumas reações hilárias!" />
+          <meta property="og:locale" content="pt_BR" />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content="Vida no Asfalto" />
+          <meta property="article:publisher" content="https://www.facebook.com/vidanoasfalto" />
 
-          <h2 className="subtopic">{this.state.imageText1}</h2>
-          <br />
-          <img src={uber1} />
-          <span className="mini-title">{this.state.subtitle1}</span>
-          <br />
-          <br />
+        </MetaTags>
+        <HeroTitle title={this.state.title} subtitle={this.state.subtitle}></HeroTitle>
+        <section className="page-content">
 
-          <h2 className="subtopic">{this.state.imageText2}</h2>
-          <br />
-          <img src={uber2} />
-          <span className="mini-title">{this.state.subtitle2}</span>
-          <br />
-          <br />
-          <FormBait 
-          title="Se você deu uma risadinha...rs" 
-          subtitle="Se cadastre para receber conteúdos semelhantes"
-          buttonMsg="Cadastrar"
-          />
+          <div className="article-content">
+            <h2 className="subtopic">{this.state.topic1}</h2>
+            <br />
 
-          <h2 className="subtopic">{this.state.imageText3}</h2>
-          <br />
-          <img src={uber3} />
-          <span className="mini-title">{this.state.subtitle3}</span>
-          <br />
-          <br />
+            <h2 className="subtopic">{this.state.imageText1}</h2>
+            <br />
+            <img src={uber1} alt="print uber" />
+            <span className="mini-title">{this.state.subtitle1}</span>
+            <br />
+            <br />
 
-          <h2 className="subtopic">{this.state.imageText4}</h2>
-          <br />
-          <img src={uber4} />
-          <span className="mini-title">{this.state.subtitle4}</span>
-          <br />
-          <br />
+            <h2 className="subtopic">{this.state.imageText2}</h2>
+            <br />
+            <img src={uber2} alt="print uber"/>
+            <span className="mini-title">{this.state.subtitle2}</span>
+            <br />
+            <br />
+            <FormBait
+              title="Se você deu uma risadinha...rs"
+              subtitle="Se cadastre para receber conteúdos semelhantes"
+              buttonMsg="Cadastrar"
+            />
 
-          <h2 className="subtopic">{this.state.imageText5}</h2>
-          <br />
-          <img src={uber5} />
-          <span className="mini-title">{this.state.subtitle5}</span>
-          <br />
-          <br />
+            <h2 className="subtopic">{this.state.imageText3}</h2>
+            <br />
+            <img src={uber3} alt="print uber"/>
+            <span className="mini-title">{this.state.subtitle3}</span>
+            <br />
+            <br />
 
-          <h2 className="subtopic">{this.state.imageText6}</h2>
-          <br />
-          <img src={uber6} />
-          <span className="mini-title">{this.state.subtitle6}</span>
-          <br />
-          <br />
+            <h2 className="subtopic">{this.state.imageText4}</h2>
+            <br />
+            <img src={uber4} alt="print uber"/>
+            <span className="mini-title">{this.state.subtitle4}</span>
+            <br />
+            <br />
 
-          <h2 className="subtopic">{this.state.topic2}</h2>
-          <br />
+            <h2 className="subtopic">{this.state.imageText5}</h2>
+            <br />
+            <img src={uber5} alt="print uber"/>
+            <span className="mini-title">{this.state.subtitle5}</span>
+            <br />
+            <br />
 
-          <h2 className="subtopic">{this.state.imageText7}</h2>
-          <br />
-          <img src={uberbonus} />
+            <h2 className="subtopic">{this.state.imageText6}</h2>
+            <br />
+            <img src={uber6} alt="print uber"/>
+            <span className="mini-title">{this.state.subtitle6}</span>
+            <br />
+            <br />
 
-          <h2 className="subtopic">{this.state.imageText8}</h2>
-          <br />
-          <img src={uberbonus2} />
-        </div>
-        <img className="div-bar" src={divBar} />
-        <h1 className="topic">Leia Também</h1>
+            <h2 className="subtopic">{this.state.topic2}</h2>
+            <br />
 
-        <PostCards />
-      </section>
+            <h2 className="subtopic">{this.state.imageText7}</h2>
+            <br />
+            <img src={uberbonus} alt="print uber"/>
+
+            <h2 className="subtopic">{this.state.imageText8}</h2>
+            <br />
+            <img src={uberbonus2} alt="print uber"/>
+          </div>
+          <img className="div-bar" src={divBar} />
+          <h1 className="topic">Leia Também</h1>
+
+          <PostCards />
+        </section>
       </Fragment>
     );
   }
