@@ -48,11 +48,12 @@ class PostCard extends Component {
                     imageUrl: post5,
                     urlArticle: '/artigos/como-vender-seu-carro-acima-da-tabela-fipe'
                 },
-                // {
-                //     title: 'Categoria',
-                //     subtitle: 'Titulo do Card 2',
-                //     imageUrl: post6,
-                // },
+                {
+                    title: 'Dicas',
+                    subtitle: 'Insurtechs e os seguros digitais',
+                    imageUrl: post6,
+                    urlArticle: '/artigos/a-tendencia-dos-seguros-digitais'
+                },
             ]
         };
     }
