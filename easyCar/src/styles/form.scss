@@ -9,3 +9,12 @@
         display: none;
     }
 }
+
+@media(max-width:600px){
+    .leadCapture{
+        button{
+            position: relative;
+            width: 100%;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import checklist from '../assets/check-list-viagem-no-feriado.png'
 import mapRoad from '../assets/mapRoad.png'
 import CALL2A from '../components/CALL2A'
 import FormBait from '../components/FormBait'
+import PostCards from '../components/PostCards'
 
 import "rbx/index.css";
 import '../styles/Article.scss'
@@ -17,10 +18,14 @@ class Article extends Component {
             {
                 title: 'Dicas para evitar imprevistos durante a viagem',
                 subtitle: 'Fazer um check-up do seu carro é essencial para garantir uma viagem segura e sem imprevistos.',
+<<<<<<< HEAD
                 textContent1: 'Mais um feriado se aproximando (20/06 - Corpus Christi) e milhões de pessoas usarão esses dias para descanso ou diversão. O vida no asfalto (VA) vai te ajudar a aproveitar esses momentos e curtir de forma mais segura.',
+=======
+                textContent1: 'Mais um feriado se aproximou (20/06 - Corpus Christi) e milhões de pessoas usaram esses dias para descanso ou diversão. O vida no asfalto (VA) vai te ajudar a aproveitar esses momentos e curtir de forma mais segura.',
+>>>>>>> 8c4cfeb74fcf911167d59a4f34a29302068801ac
                 textContent1meio: 'Para muitas pessoas serão 4 dias sem trabalhar, mas é importante que, antes de pegar a estrada, você cheque as condições de segurança do seu carro. Seja para perto ou para longe, fazer a revisão no seu veículo é essencial para garantir uma viagem tranquila. E para que você se lembre de tudo na hora da revisão, fizemos uma lista dos principais pontos para checar antes de pegar a estrada. Confira alguns itens básicos e dicas que às vezes deixamos passar batido:',
                 topic1: 'Pneus',
-                textContent2: 'Ponto clássico de checagem, os pneus, têm fácil visualização, mas o VNA te dá três dicas importantes:',
+                textContent2: 'Ponto clássico de checagem, os pneus, têm fácil visualização, mas o VA te dá três dicas importantes:',
                 topic2: 'Caso seu pneu fure, você pode não encontrar um borracheiro com tanta facilidade.',
                 topic3: 'O pneu com bolhas pode explodir devido à exposição a altas temperaturas em rodovias a pressão pode aumentar',
                 topic4: 'Pneus carecas indicam risco e não devem ser ignorados. Em caso de chuva permitem maior aquaplanagem e perda de controle da direção.',
@@ -75,8 +80,9 @@ class Article extends Component {
                     <span className="text-content">{this.state.textContent8}</span><br />
                     <span className="text-content">{this.state.topic11}</span><br />
                 </div>
-                         
-                
+                <img className="div-bar" src={divBar} />
+                <h1 className="topic">Leia Também</h1>
+                <PostCards></PostCards>
 
 
             </section >

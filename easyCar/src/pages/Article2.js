@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import CALL2A from '../components/CALL2A'
-import CompactPostCards from '../components/CompactPostCard'
+import PostCards from '../components/PostCards'
 
 
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
+import PostCard from '../components/PostCards';
 
 class Article2 extends Component {
     constructor(props) {
@@ -62,7 +63,7 @@ class Article2 extends Component {
                 </div>
                 <img className="div-bar" src={divBar} />
                 <h1 className="topic">Leia Também</h1>
-                
+                <PostCards></PostCards>
 
 
             </section >

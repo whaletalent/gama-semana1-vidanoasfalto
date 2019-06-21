@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from 'react'
-import {Field, Control, Input, Label, Select, Help, Textarea, Button, Radio} from 'rbx'
+import {Field, Control, Input, Label, Textarea, Button, Column} from 'rbx'
 
 class ContactForm extends Component {
     render(){
         return (
             <Fragment>
+                <Column.Group centered>
+                    <Column size="half">
                 <form>
                     <Field horizontal>
                         <Field.Label size="normal">
@@ -70,6 +72,8 @@ class ContactForm extends Component {
                         </Field.Body>
                     </Field>
                     </form>
+                    </Column>
+                </Column.Group>
             </Fragment>
         )
     }

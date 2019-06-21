@@ -26,7 +26,11 @@ class CardImage extends Component{
                     Clube Exclusivo
                     </Title>
                     <Title subtitle size={6} id="textP" subtitle subtitle>
+<<<<<<< HEAD
                     Quer ser um dos primeiros a participar do “Meu Vida no Asfalto”, nosso clube conteudo exclusivo? Os primeiros convites são limitados e o cadastro encerra em 2 Dias.
+=======
+                    Quer ser um dos primeiros a participar do “Minha Vida no Asfalto”, nosso clube conteudo exclusivo? Os primeiros convites são limitados e o cadastro encerra em x Dias.
+>>>>>>> 8c4cfeb74fcf911167d59a4f34a29302068801ac
 Acelere e garanta já o seu lugar!
                     </Title>
                     <ModalButton/>
