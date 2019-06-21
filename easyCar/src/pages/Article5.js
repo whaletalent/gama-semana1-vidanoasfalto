@@ -34,36 +34,11 @@ class Article5 extends Component {
         return (
             <section className="page-content">
 
-                <div id="Titulo" className="article-info">
-                    <h1 className="title">{this.state.title}</h1>
-                    <h5 className="subtitle">{this.state.subtitle}</h5>
-                </div>
-                <div className="article-content">
-                    <p>{this.state.textContent1}</p><br/>
-                    <p>{this.state.textContent2}</p><br/>
-                    <p>{this.state.textContent3}</p><br/>
-                    
-                    <p>{this.state.textContent4}</p><br/>
-                     
-                    <p>{this.state.textContent5}</p><br/>        
-                          
-                     
-                    <p>{this.state.textContent6}</p><br/>
-                    <p>{this.state.textContent7}</p><br/>   
-                        
-                    <p>{this.state.textContent8}</p><br/> 
-                    <p>{this.state.textContent9}</p><br/> 
                     <FormBait 
                     title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
                     subtitle="Quer saber mais sobre seu carro?"
                     buttonMsg="Enviar"
                     />  
-                    <span className="subtopic">{this.state.topic5}</span><br />
-                    
-                </div>
-                <img className="div-bar" src={divBar} />
-                <h1 className="topic">Leia Também</h1>
-                <PostCards></PostCards>
 
 
             </section >
