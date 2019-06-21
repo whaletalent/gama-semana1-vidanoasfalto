@@ -10,6 +10,7 @@ import uber5 from '../assets/uber5.png'
 import uber6 from '../assets/uber6.png'
 import uberbonus from '../assets/uberbonus.png'
 import uberbonus2 from '../assets/uberbonus2.png'
+import FormBait from '../components/FormBait'
 
 import "rbx/index.css";
 import '../styles/Article.scss'
@@ -64,7 +65,8 @@ class Article2 extends Component {
 
                     <h2 className="subtopic">{this.state.imageText2}</h2><br />
                     <img src={uber2} />
-                    <span className="mini-title">{this.state.subtitle2}</span><br/><br/>                   
+                    <span className="mini-title">{this.state.subtitle2}</span><br/><br/>
+                    <FormBait></FormBait>                  
 
                     <h2 className="subtopic">{this.state.imageText3}</h2><br />
                     <img src={uber3} />
