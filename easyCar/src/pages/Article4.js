@@ -21,14 +21,14 @@ class Article4 extends Component {
                 title: 'É assim mesmo que eu lavo meu carro!',
                 
 
-                topic: 'Faça parte do Clube',
+                topic: '',
                 
                 
                 textContent1: 'Estavamos em busca de fotos de mulheres cuidando de veículos para usarmos nas comunicações do blog, quando nos deparamos com esa questão. Além de quase não existir esse tipo de registro, as poucas que encontramos foram essas:',
                 textContent2: 'Mulheres semi-nuas, ensaboando a lataria com o bumbum empinado e carão.',
                 textContent3: 'Espante-se com nosso espanto, mas já passou o tempo das mulheres serem retratadas de forma sexualizada.',
                 textContent4: 'E como a missão da Vida no Asfalto é levar informação, não podemos ficar quietos diante dessa situação.',
-                textContent5: 'Por isso, queremos fazer um movimento para transformarmos os bancos de imagem e as concepções da sociedade quando se fala em automóveis! ',
+                textContent5: 'Por isso, queremos fazer um movimento para transformarmos os bancos de imagems e as concepções da sociedade quando se fala em automóveis! ',
                 textContent6: 'Assine com seu nome e e-mail para apoiar a ação!',
                 textContent7: 'O Vida no Asfalto não é só mais um blog sobre carros. Nós buscamos simplificar a linguagem automotiva e aproximá-la de todas as pessoas para que elas possam elevar seus conhecimentos e ter uma experiência melhor na mobilidade do dia a dia.',
                 
