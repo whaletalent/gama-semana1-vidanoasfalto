@@ -42,11 +42,12 @@ class PostCard extends Component {
                     imageUrl: post9,
                     urlArticle: '/artigos/e-assim-que-eu-lavo-meu-carro'
                 },
-                // {
-                //     title: 'Categoria',
-                //     subtitle: 'Titulo do Card 2',
-                //     imageUrl: post5,
-                // },
+                {
+                    title: 'Dicas',
+                    subtitle: 'Lucrando na venda do seu carro',
+                    imageUrl: post5,
+                    urlArticle: '/artigos/como-vender-seu-carro-acima-da-tabela-fipe'
+                },
                 // {
                 //     title: 'Categoria',
                 //     subtitle: 'Titulo do Card 2',
