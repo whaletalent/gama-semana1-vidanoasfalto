@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
+import seguroimagem from '../assets/imagem-seguro.jpg'
 
 
 import "rbx/index.css";
@@ -37,11 +38,12 @@ class Article6 extends Component {
                     <h1 className="title">{this.state.title}</h1>                    
                 </div>
                 <div className="article-content">
-                    <p>{this.state.textContent1}</p><br/>
-                    <p>{this.state.textContent2}</p><br/>
-                    <p>{this.state.textContent3}</p><br/>                    
-                    <p>{this.state.textContent4}</p><br/>                      
-                    <p>{this.state.textContent5}</p><br/>        
+                    <p className="text-content">{this.state.textContent1}</p><br/>
+                    <p className="text-content">{this.state.textContent2}</p><br/>
+                    <img className="imagem"src={seguroimagem}/> 
+                    <p className="text-content">{this.state.textContent3}</p><br/>                    
+                    <p className="text-content">{this.state.textContent4}</p><br/>                      
+                    <p className="text-content">{this.state.textContent5}</p><br/>        
                     <FormBait 
                     title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
                     subtitle="Quer saber mais sobre seu carro?"
