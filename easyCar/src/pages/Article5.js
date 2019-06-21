@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
-
+import HeroTitle from '../components/HeroTitle'
 
 import "rbx/index.css";
 import '../styles/Article.scss'
 import divBar from '../assets/divBar.svg'
+import FormDownloadInfo from '../components/FormDownloadInfo';
 
 class Article5 extends Component {
     constructor(props) {
@@ -32,6 +33,8 @@ class Article5 extends Component {
     render() {
 
         return (
+            <Fragment>
+            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
             <section className="page-content">
                     <div id="Titulo" className="article-info">
                         <h1 className="title">{this.state.title}</h1>                    
@@ -49,7 +52,7 @@ class Article5 extends Component {
                     <p className="text-content">{this.state.textContent5}</p><br/> 
                     </div>
 
-                    <FormBait 
+                    <FormDownloadInfo 
                     title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
                     subtitle="Quer saber mais sobre seu carro?"
                     buttonMsg="Enviar"
@@ -57,6 +60,7 @@ class Article5 extends Component {
 
 
             </section >
+            </Fragment>
         )
     }
 }

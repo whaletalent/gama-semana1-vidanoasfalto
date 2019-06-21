@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import CALL2A from "../components/CALL2A";
 import PostCards from "../components/PostCards";
-
+import HeroTitle from '../components/HeroTitle'
 import uber1 from "../assets/uber1.png";
 import uber2 from "../assets/uber2.png";
 import uber3 from "../assets/uber3.png";
@@ -47,6 +47,8 @@ class Article2 extends Component {
   }
   render() {
     return (
+      <Fragment>
+            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
       <section className="page-content">
         <div id="Titulo" className="article-info">
           <h1 className="title">{this.state.title}</h1>
@@ -119,6 +121,7 @@ class Article2 extends Component {
 
         <PostCards />
       </section>
+      </Fragment>
     );
   }
 }

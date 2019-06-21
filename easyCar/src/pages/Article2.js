@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
-
+import HeroTitle from '../components/HeroTitle'
 
 import "rbx/index.css";
 import '../styles/Article.scss'
@@ -38,6 +38,8 @@ class Article2 extends Component {
     render() {
 
         return (
+            <Fragment>
+            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
             <section className="page-content">
 
                 <div id="Titulo" className="article-info">
@@ -71,6 +73,7 @@ class Article2 extends Component {
 
 
             </section >
+            </Fragment>
         )
     }
 }

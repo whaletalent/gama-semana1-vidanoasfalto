@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
-
+import HeroTitle from '../components/HeroTitle'
 import mulhereslavando1 from '../assets/mulheres-lavando1.gif'
 import mulhereslavando2 from '../assets/mulheres-lavando2.gif'
 import mulhereslavando3 from '../assets/mulheres-lavando3.gif'
@@ -28,7 +28,7 @@ class Article4 extends Component {
                 textContent2: 'Mulheres semi-nuas, ensaboando a lataria com o bumbum empinado e carão.',
                 textContent3: 'Espante-se com nosso espanto, mas já passou o tempo das mulheres serem retratadas de forma sexualizada.',
                 textContent4: 'E como a missão da Vida no Asfalto é levar informação, não podemos ficar quietos diante dessa situação.',
-                textContent5: 'Por isso, queremos fazer um movimento para transformarmos os bancos de imagems e as concepções da sociedade quando se fala em automóveis! ',
+                textContent5: 'Por isso, queremos fazer um movimento para transformarmos os bancos de imagens e as concepções da sociedade quando se fala em automóveis! ',
                 textContent6: 'Assine com seu nome e e-mail para apoiar a ação!',
                 textContent7: 'O Vida no Asfalto não é só mais um blog sobre carros. Nós buscamos simplificar a linguagem automotiva e aproximá-la de todas as pessoas para que elas possam elevar seus conhecimentos e ter uma experiência melhor na mobilidade do dia a dia.',
                 
@@ -37,6 +37,8 @@ class Article4 extends Component {
     }
     render() {
         return (
+            <Fragment>
+            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
             <section className="page-content">
                 <div id="Titulo" className="article-info">
                     <h1 className="title">{this.state.title}</h1>                    
@@ -70,6 +72,7 @@ class Article4 extends Component {
 
 
             </section >
+            </Fragment>
         )
     }
 }
