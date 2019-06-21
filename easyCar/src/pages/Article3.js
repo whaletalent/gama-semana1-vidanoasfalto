@@ -16,7 +16,7 @@ import "rbx/index.css";
 import "../styles/Article.scss";
 import divBar from "../assets/divBar.svg";
 
-class Article2 extends Component {
+class Article3 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +25,7 @@ class Article2 extends Component {
       subtitle:
         "Todos os dias, milhões de viagens são feitas no aplicativo, então é de se esperar algumas situações no mínimo engraçadas, confira:",
 
-      topic1: "Vida no Asfalto",
+      topic1: "",
       topic2: "Bônus: as melhores avaliações possíveis",
 
       imageText1: "1. Quando André escolheu o caldo de cana a uma corrida?",
@@ -50,10 +50,7 @@ class Article2 extends Component {
       <Fragment>
             <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
       <section className="page-content">
-        <div id="Titulo" className="article-info">
-          <h1 className="title">{this.state.title}</h1>
-          <h5 className="subtitle">{this.state.subtitle}</h5>
-        </div>
+        
         <div className="article-content">
           <h2 className="subtopic">{this.state.topic1}</h2>
           <br />
@@ -126,4 +123,4 @@ class Article2 extends Component {
   }
 }
 
-export default Article2;
+export default Article3;

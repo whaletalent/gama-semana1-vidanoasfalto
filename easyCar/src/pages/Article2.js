@@ -42,10 +42,7 @@ class Article2 extends Component {
             <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
             <section className="page-content">
 
-                <div id="Titulo" className="article-info">
-                    <h1 className="title">{this.state.title}</h1>
-                    <h5 className="subtitle">{this.state.subtitle}</h5>
-                </div>
+               
                 <div className="article-content">
                     <p>{this.state.textContent1}</p><br/>
                     <p>{this.state.textContent2}</p><br/>

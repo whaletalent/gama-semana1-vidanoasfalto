@@ -14,7 +14,7 @@ class Article5 extends Component {
         this.state =
 
             {
-                title: '5 passos para vender seu carro acima da tabela FIPE',
+                title: '5 Passos para Vender seu Carro acima da Tabela FIPE',
                 
                
                 
@@ -36,9 +36,7 @@ class Article5 extends Component {
             <Fragment>
             <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
             <section className="page-content">
-                    <div id="Titulo" className="article-info">
-                        <h1 className="title">{this.state.title}</h1>                    
-                    </div>
+                    
                     <div className="article-content">
                     <p className="text-content">{this.state.textContent1}</p><br/>
                     <p className="text-content">{this.state.textContent2}</p><br/>
@@ -53,9 +51,9 @@ class Article5 extends Component {
                     </div>
 
                     <FormDownloadInfo 
-                    title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
-                    subtitle="Quer saber mais sobre seu carro?"
-                    buttonMsg="Enviar"
+                    title="Preencha o Formulário para acessar o Infográfico"
+                    subtitle=""
+                    buttonMsg="Acessar Infográfico"
                     />  
 
 
