@@ -21,12 +21,13 @@ class CardImage extends Component{
         <Hero size="large" id="hero">
             <Hero.Body>
                 <Container textAlign="centered">
-                    <Title id="text"  size={1}>Minha Vida no asfalto</Title>
+                    <Title id="text"  size={1}>Meu Vida no asfalto</Title>
                     <Title  id="text" as="h1"  size={1} subtitle>
                     Clube Exclusivo
                     </Title>
                     <Title subtitle size={6} id="textP" subtitle subtitle>
-                    Quer ser um dos primeiros a participar do “Minha Vida no Asfalto”, nosso clube conteudo exclusivo? Os primeiros convites são limitados e o cadastro encerra em 2 Dias.
+
+                    Quer ser um dos primeiros a participar do “Minha Vida no Asfalto”, nosso clube conteudo exclusivo? Os primeiros convites são limitados e o cadastro encerra em 2 Dias. 
 Acelere e garanta já o seu lugar!
                     </Title>
                     <ModalButton/>
