@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import divBar from '../assets/divBar.svg'
 import checklist from '../assets/check-list-viagem-no-feriado.png'
 import mapRoad from '../assets/mapRoad.png'
 import CALL2A from '../components/CALL2A'
 import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
-
+import HeroTitle from '../components/HeroTitle'
 import "rbx/index.css";
 import '../styles/Article.scss'
 
@@ -43,8 +43,9 @@ class Article extends Component {
     render() {
 
         return (
+            <Fragment>
+            <HeroTitle title="Teste" subtitle="teste"></HeroTitle>
             <section className="page-content">
-
                 <div id="Titulo" className="article-info">
                     <h1 className="title">{this.state.title}</h1>
                     <h5 className="subtitle">{this.state.subtitle}</h5>
@@ -84,8 +85,8 @@ class Article extends Component {
                 <h1 className="topic">Leia Também</h1>
                 <PostCards></PostCards>
 
-
             </section >
+                </Fragment>
         )
     }
 }
