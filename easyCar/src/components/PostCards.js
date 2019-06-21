@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import post1 from '../assets/postImage1.png'
 import post2 from '../assets/post2.png'
 import post3 from '../assets/post3.png'
-import post4 from '../assets/post4.png'
+import post9 from '../assets/post9.png'
 import post5 from '../assets/post5.png'
 import post6 from '../assets/post6.png'
 
@@ -36,11 +36,12 @@ class PostCard extends Component {
                     imageUrl: post3,
                     urlArticle: '/artigos/passageiro-estranho-reacoes-hilarias'
                 },
-                // {
-                //     title: 'Categoria',
-                //     subtitle: 'Titulo do Card 2',
-                //     imageUrl: post4,
-                // },
+                {
+                    title: 'Dicas',
+                    subtitle: 'É assim que eu lavo meu carro!',
+                    imageUrl: post9,
+                    urlArticle: '/artigos/e-assim-que-eu-lavo-meu-carro'
+                },
                 // {
                 //     title: 'Categoria',
                 //     subtitle: 'Titulo do Card 2',
