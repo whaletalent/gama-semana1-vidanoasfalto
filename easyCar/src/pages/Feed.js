@@ -37,7 +37,11 @@ class Feed extends Component {
                     <div className="feed">
                         <PostCards/>
                     </div>
-                    <FormBait/>
+                    <FormBait 
+                    title="Quer fazer uma checklist para a sua próxima viagem?"
+                    subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino"
+                    buttonMsg="Baixar Grátis"
+                    />
                 
             </Fragment>
         )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CALL2A from '../components/CALL2A'
+import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
 
 
@@ -52,7 +52,11 @@ class Article2 extends Component {
                     <p>{this.state.textContent4}</p><br/>
                     <h2 className="supertopic">{this.state.topic2}</h2><br/>  
                     <p>{this.state.textContent5}</p><br/>        
-                    <CALL2A className="CTA" linkURL="" writtenLink="" call="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!" /><br/><br/>        
+                    <FormBait 
+                    title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
+                    subtitle="Quer saber mais sobre seu carro?"
+                    buttonMsg="Enviar"
+                    />  
                     <h2 className="supertopic">{this.state.topic3}</h2><br/> 
                     <p>{this.state.textContent6}</p><br/>
                     <p>{this.state.textContent7}</p><br/>   

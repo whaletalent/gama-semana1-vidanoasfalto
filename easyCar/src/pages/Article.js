@@ -53,7 +53,11 @@ class Article extends Component {
                     <p className="text-content">{this.state.textContent1}</p><br />
                     <p className="text-content">{this.state.textContent1meio}</p><br />
                     <img className="imagem" src={mapRoad} /><br />
-                    <FormBait />
+                    <FormBait 
+                    title="Quer fazer uma checklist para a sua próxima viagem?"
+                    subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino"
+                    buttonMsg="Baixar Grátis"
+                    />
                     <h2 className="subtopic">{this.state.topic1}</h2><br />
                     <p className="text-content">{this.state.textContent2}</p><br />
                     <h5><span className="subtopic">1 - Não esqueça seu estepe!</span><br /><span className="text-content">{this.state.topic2}</span></h5><br />

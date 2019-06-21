@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CALL2A from '../components/CALL2A'
+import FormBait from '../components/FormBait'
 import PostCards from '../components/PostCards'
 
 import mulhereslavando1 from '../assets/mulheres-lavando1.gif'
@@ -55,7 +55,11 @@ class Article4 extends Component {
                     <p className='text-content'>{this.state.textContent4}</p><br/>
                     <p className='text-content'>{this.state.textContent5}</p><br/>        
                     <p className='text-content'>{this.state.textContent6}</p><br/>
-                    <CALL2A className="CTA" linkURL="" writtenLink="" call="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!" /><br/><br/>        
+                    <FormBait
+                    title="Faça parte desse movimento!"
+                    subtitle="Junte-se a nós!"
+                    buttonMsg="Eu Apoio!"
+                    ></FormBait>        
                     <p className='text-content'>{this.state.textContent7}</p><br/>                          
                     <p className='text-content'>{this.state.textContent8}</p>               
                     <h5 className='sub-topic'>{this.state.topic}</h5>

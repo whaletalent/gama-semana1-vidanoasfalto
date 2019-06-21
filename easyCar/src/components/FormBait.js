@@ -50,8 +50,8 @@ class FormBait extends React.Component {
           <Column.Group centered>
             <Column>
               <Fieldset class="leadCapture">
-              <Title>Quer fazer uma checklist para sua próxima viagem?</Title>
-              <Title subtitle>Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino</Title>
+              <Title>{this.props.title}</Title>
+              <Title subtitle>{this.props.subtitle}</Title>
                 <Input type="hidden" ref="data_hora" />
                 <Input
                   id="imputLead"
@@ -75,7 +75,7 @@ class FormBait extends React.Component {
                   required
                 />
                 
-                <Button color="black" type="submit" >Baixar Grátis</Button>
+                <Button color="black" type="submit" >{this.props.buttonMsg}</Button>
                 <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>
               </Fieldset>
             </Column>
