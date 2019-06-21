@@ -70,7 +70,7 @@ class Article2 extends Component {
           <br />
           <br />
           <FormBait 
-          titulo="Se você deu uma risadinha...rs" 
+          title="Se você deu uma risadinha...rs" 
           subtitle="Se cadastre para receber conteúdos semelhantes"
           buttonMsg="Cadastrar"
           />
