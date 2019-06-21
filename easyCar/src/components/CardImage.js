@@ -21,7 +21,7 @@ class CardImage extends Component{
         <Hero size="large" id="hero">
             <Hero.Body>
                 <Container textAlign="centered">
-                    <Title id="text"  size={1}>Meu Vida no asfalto</Title>
+                    <Title id="text"  size={1}>Minha Vida no asfalto</Title>
                     <Title  id="text" as="h1"  size={1} subtitle>
                     Clube Exclusivo
                     </Title>
