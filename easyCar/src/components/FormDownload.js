@@ -3,13 +3,13 @@ import React from "react";
 import Firebase from "firebase";
 import firebase from "../config/firebase-config";
 import { CSVLink, CSVDownload } from "react-csv";
-import "../styles/formBait.scss";
+import "../styles/formDownload.scss";
 
 import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
 import { Fieldset, Button, Column, Input, Title, Field, Control, Label, Radio } from "rbx";
 
-class FormBait extends React.Component {
+class FormDownload extends React.Component {
   constructor(props) {
     super(props);
     
@@ -113,8 +113,8 @@ class FormBait extends React.Component {
     this.refs.data_hora.value = "";
     this.refs.lastName.value = "";
     
-    
+    window.open("https://i.ibb.co/3fWkXkh/check-list-viagem-no-feriado.png", "_blank")
   };
 }
 
-export default FormBait;
+export default FormDownload;
