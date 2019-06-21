@@ -44,12 +44,9 @@ class Article extends Component {
 
         return (
             <Fragment>
-            
+            <HeroTitle title={this.state.title }subtitle={this.state.subtitle}></HeroTitle>
             <section className="page-content">
-                <div id="Titulo" className="article-info">
-                    <h1 className="title">{this.state.title}</h1>
-                    <h5 className="subtitle">{this.state.subtitle}</h5>
-                </div>
+                
                 <div className="article-content">
                     <p className="text-content">{this.state.textContent1}</p><br />
                     <p className="text-content">{this.state.textContent1meio}</p><br />

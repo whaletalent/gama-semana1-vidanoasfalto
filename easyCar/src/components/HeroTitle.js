@@ -2,7 +2,7 @@ import React, {Component }from 'react';
 
 import { Title, Button, Hero, Container } from "rbx";
 const style ={ 
-    backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",
+    backgroundImage: "url(" + "https://i.imgur.com/x0Hf91B.jpg" + ")",
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'
@@ -24,7 +24,7 @@ class HeroTitle extends Component{
                 <Container textAlign="centered">
                     
                     <Title id="text"  size={2}>{this.props.title}</Title>
-                    <Title  id="text" as="h1"  size={2} subtitle>
+                    <Title  id="text" as="h1"  size={5} subtitle>
                     {this.props.subtitle}
                     </Title>
                 </Container>

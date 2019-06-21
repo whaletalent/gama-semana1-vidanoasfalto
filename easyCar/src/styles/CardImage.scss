@@ -23,7 +23,15 @@
 @media(min-width:600px){
 
     #hero-title{
+        margin-top: -20em;
+        
+    }
+}
+@media(max-width:600px){
+
+    #hero-title{
         margin-top: -3em;
+        margin-bottom: -3em;
         
     }
 }
