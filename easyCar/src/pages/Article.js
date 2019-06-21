@@ -8,6 +8,7 @@ import PostCards from '../components/PostCards'
 import HeroTitle from '../components/HeroTitle'
 import "rbx/index.css";
 import '../styles/Article.scss'
+import FormDownload from '../components/FormDownload';
 
 
 class Article extends Component {
@@ -51,7 +52,7 @@ class Article extends Component {
                     <p className="text-content">{this.state.textContent1}</p><br />
                     <p className="text-content">{this.state.textContent1meio}</p><br />
                     <img className="imagem" src={mapRoad} /><br />
-                    <FormBait 
+                    <FormDownload 
                     title="Quer fazer uma checklist para a sua próxima viagem?"
                     subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino"
                     buttonMsg="Baixar Grátis"

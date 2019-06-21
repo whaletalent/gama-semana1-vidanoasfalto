@@ -5,7 +5,7 @@ import '../styles/Feed.scss'
 import PostCards from '../components/PostCards'
 import CardImage from '../components/CardImage'
 import ContainerForm from '../components/ContainerForm'
-import FormBait from '../components/FormBait';
+import FormDownload from '../components/FormDownload';
 
 class Feed extends Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class Feed extends Component {
                     <div className="feed">
                         <PostCards/>
                     </div>
-                    <FormBait 
+                    <FormDownload
                     title="Quer fazer uma checklist para a sua próxima viagem?"
                     subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino"
                     buttonMsg="Baixar Grátis"
