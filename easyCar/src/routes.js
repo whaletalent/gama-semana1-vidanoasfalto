@@ -12,6 +12,7 @@ import Article3 from './pages/Article3.js'
 import Article4 from './pages/Article4.js'
 import Article5 from './pages/Article5.js'
 import Article6 from './pages/Article6.js'
+import Page404 from './pages/Page404.js'
 function Routes() {
     return (
         <Switch>
@@ -26,7 +27,7 @@ function Routes() {
             <Route path="/artigos/e-assim-que-eu-lavo-meu-carro" component={Article4} />
             <Route path="/artigos/como-vender-seu-carro-acima-da-tabela-fipe" component={Article5} />
             <Route path="/artigos/a-tendencia-dos-seguros-digitais" component={Article6} />
-
+            <Route component={Page404} />
         </Switch>
     )
 }
