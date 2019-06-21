@@ -33,6 +33,21 @@ class Article5 extends Component {
 
         return (
             <section className="page-content">
+                    <div id="Titulo" className="article-info">
+                        <h1 className="title">{this.state.title}</h1>                    
+                    </div>
+                    <div className="article-content">
+                    <p className="text-content">{this.state.textContent1}</p><br/>
+                    <p className="text-content">{this.state.textContent2}</p><br/>
+                    <p className="text-content">{this.state.textContent3}</p><br/>                    
+                    <p className="text-content">{this.state.textContent4}</p><br/>                                       
+                    <p className="text-content">{this.state.textContent5}</p><br/> 
+                    <p className="text-content">{this.state.textContent6}</p><br/>
+                    <p className="text-content">{this.state.textContent7}</p><br/>
+                    <p className="text-content">{this.state.textContent8}</p><br/>                    
+                    <p className="text-content">{this.state.textContent9}</p><br/>                      
+                    <p className="text-content">{this.state.textContent5}</p><br/> 
+                    </div>
 
                     <FormBait 
                     title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
