@@ -25,7 +25,7 @@ function Routes() {
             <Route path="/artigos/passageiro-estranho-reacoes-hilarias" component={Article3} />
             <Route path="/artigos/e-assim-que-eu-lavo-meu-carro" component={Article4} />
             <Route path="/artigos/como-vender-seu-carro-acima-da-tabela-fipe" component={Article5} />
-            <Route path="/artigos/a-tendencia-dos-seguros-digitais" component={Article5} />
+            <Route path="/artigos/a-tendencia-dos-seguros-digitais" component={Article6} />
 
         </Switch>
     )
