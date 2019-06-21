@@ -140,9 +140,9 @@ class Form extends React.Component {
     this.refs.email.value = "";
     this.refs.lastName.value = "";
     this.refs.data_hora.value = "";
-    console.log(this.state.Leads);
+    
     alert("Email cadastrado!");
-    console.log(tipo);
+  
   };
 }
 
