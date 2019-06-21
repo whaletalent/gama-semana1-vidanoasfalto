@@ -7,8 +7,17 @@ import "../styles/form.scss";
 
 import dateFormatter from "../Helpers/DateFormatter";
 import clientIp from "../Helpers/ClientIpGetter";
-import { Fieldset, Button, Column, Input, Title, Field, Control, Label, Radio } from "rbx";
-
+import {
+  Fieldset,
+  Button,
+  Column,
+  Input,
+  Title,
+  Field,
+  Control,
+  Label,
+  Radio
+} from "rbx";
 
 class Form extends React.Component {
   constructor(props) {
@@ -20,7 +29,7 @@ class Form extends React.Component {
   componentDidMount() {
     this.getUserData();
   }
-  
+
   componentDidUpdate(prevProps, prevState) {
     if (prevState !== this.state) {
       this.writeUserData();
@@ -28,11 +37,11 @@ class Form extends React.Component {
   }
   writeUserData = () => {
     Firebase.database()
-    .ref("/")
-    .set(this.state);
+      .ref("/")
+      .set(this.state);
     console.log("Dados salvos");
   };
-  
+
   getUserData = () => {
     let ref = Firebase.database().ref("/");
     ref.on("value", snapshot => {
@@ -44,12 +53,12 @@ class Form extends React.Component {
   render() {
     const { Leads } = this.state;
     return (
-      <div >
+      <div>
         <form onSubmit={this.handleSubmit}>
           <Column.Group centered>
             <Column>
               <Fieldset class="leadCapture">
-              <Title size={5}>Quer saber mais sobre seu carro?</Title>
+                <Title size={5}>Quer saber mais sobre seu carro?</Title>
                 <Input type="hidden" ref="data_hora" />
                 <Input
                   id="imputLead"
@@ -58,7 +67,7 @@ class Form extends React.Component {
                   placeholder="Nome"
                   required
                 />
-                 <Input
+                <Input
                   id="imputLead"
                   type="text"
                   ref="lastName"
@@ -86,13 +95,20 @@ class Form extends React.Component {
                     </Field>
                   </Field.Body>
                 </Field> */}
-                <Button color="primary" size="large" type="submit">Enviar</Button>
-                <CSVLink id="csv-link" filename={"leads.csv"} data={this.state.Leads}>Download csv</CSVLink>
+                <Button color="primary" size="large" type="submit">
+                  Enviar
+                </Button>
+                <CSVLink
+                  id="csv-link"
+                  filename={"leads.csv"}
+                  data={this.state.Leads}
+                >
+                  Download csv
+                </CSVLink>
               </Fieldset>
             </Column>
           </Column.Group>
         </form>
-        
       </div>
     );
   }
@@ -100,10 +116,10 @@ class Form extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     let email = this.refs.email.value;
-    let nome = this.refs.name.value+" "+this.refs.lastName.value;
-    let ip = clientIp
+    let nome = this.refs.name.value + " " + this.refs.lastName.value;
+    let ip = clientIp;
     //let tipo = this.refs.member.value
-    let tipo = 'B2C'
+    let tipo = "B2C";
     let data_hora;
 
     if (data_hora && nome && email) {
@@ -125,8 +141,8 @@ class Form extends React.Component {
     this.refs.lastName.value = "";
     this.refs.data_hora.value = "";
     console.log(this.state.Leads);
-    alert('Email cadastrado!')  
-    console.log(tipo)
+    alert("Email cadastrado!");
+    console.log(tipo);
   };
 }
 

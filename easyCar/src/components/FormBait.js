@@ -50,7 +50,7 @@ class FormBait extends React.Component {
           <Column.Group centered>
             <Column>
               <Fieldset class="leadCapture">
-              <Title>Quer fazer um checklist para sua próxima viagem?</Title>
+              <Title>Quer fazer uma checklist para sua próxima viagem?</Title>
               <Title subtitle>Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino</Title>
                 <Input type="hidden" ref="data_hora" />
                 <Input
