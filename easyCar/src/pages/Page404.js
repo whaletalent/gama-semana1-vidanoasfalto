@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import '../styles/Article.scss'
+import HeroTitle from '../components/HeroTitle'
+import MetaTags from 'react-meta-tags';
 
 class Page404 extends Component {
     constructor(props) {
