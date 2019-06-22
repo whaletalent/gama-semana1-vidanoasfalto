@@ -65,7 +65,7 @@ class Article extends Component {
                         <img className="imagem" src={mapRoad} alt="mapa da estrada" /><br />
                         <FormDownload
                             title="Quer fazer uma checklist para a sua próxima viagem?"
-                            subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino"
+                            subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino (esse artigo continua após nossa chamada para o conteúdo especial)"
                             buttonMsg="Baixar Grátis"
                         />
                         <h2 className="subtopic">{this.state.topic1}</h2><br />

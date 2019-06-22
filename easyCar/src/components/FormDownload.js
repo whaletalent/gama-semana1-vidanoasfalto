@@ -57,21 +57,21 @@ class FormDownload extends React.Component {
                   id="imputLead"
                   type="text"
                   ref="name"
-                  placeholder="Seu Nome"
+                  placeholder="SEU NOME"
                   required
                 />
                 <Input
                   id="imputLead"
                   type="text"
                   ref="lastName"
-                  placeholder="Sobrenome"
+                  placeholder="SOBRENOME"
                   required
                 />
                 <Input
                   id="imputLead"
                   type="email"
                   ref="email"
-                  placeholder="email@exemplo.com"
+                  placeholder="EMAIL@EXEMPLO.COM.BR"
                   required
                 />
                 

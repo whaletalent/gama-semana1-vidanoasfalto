@@ -63,7 +63,7 @@ class Article2 extends Component {
                         <p>{this.state.textContent5}</p><br />
                         <FormBait
                             title="Quer mais dicas para melhorar sua performance e se divertir na sua pausa no volante? Junte-se a nós!"
-                            subtitle="Quer saber mais sobre seu carro?"
+                            subtitle="Quer saber mais sobre seu carro? (esse artigo continua após nossa chamada para o conteúdo especial)"
                             buttonMsg="Enviar"
                         />
                         <h2 className="supertopic">{this.state.topic3}</h2><br />
