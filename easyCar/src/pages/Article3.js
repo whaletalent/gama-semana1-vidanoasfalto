@@ -56,7 +56,7 @@ class Article3 extends Component {
           <meta property="og:type" content="article" />
           <meta property="og:site_name" content="Vida no Asfalto" />
           <meta property="article:publisher" content="https://www.facebook.com/vidanoasfalto" />
-
+          <link rel="canonical" href="https://www.vidanoasfalto.com.br/artigos/passageiro-estranho-reacoes-hilarias" />
         </MetaTags>
         <HeroTitle title={this.state.title} subtitle={this.state.subtitle}></HeroTitle>
         <section className="page-content">
@@ -74,7 +74,7 @@ class Article3 extends Component {
 
             <h2 className="subtopic">{this.state.imageText2}</h2>
             <br />
-            <img src={uber2} alt="print uber"/>
+            <img src={uber2} alt="print uber" />
             <span className="mini-title">{this.state.subtitle2}</span>
             <br />
             <br />
@@ -86,28 +86,28 @@ class Article3 extends Component {
 
             <h2 className="subtopic">{this.state.imageText3}</h2>
             <br />
-            <img src={uber3} alt="print uber"/>
+            <img src={uber3} alt="print uber" />
             <span className="mini-title">{this.state.subtitle3}</span>
             <br />
             <br />
 
             <h2 className="subtopic">{this.state.imageText4}</h2>
             <br />
-            <img src={uber4} alt="print uber"/>
+            <img src={uber4} alt="print uber" />
             <span className="mini-title">{this.state.subtitle4}</span>
             <br />
             <br />
 
             <h2 className="subtopic">{this.state.imageText5}</h2>
             <br />
-            <img src={uber5} alt="print uber"/>
+            <img src={uber5} alt="print uber" />
             <span className="mini-title">{this.state.subtitle5}</span>
             <br />
             <br />
 
             <h2 className="subtopic">{this.state.imageText6}</h2>
             <br />
-            <img src={uber6} alt="print uber"/>
+            <img src={uber6} alt="print uber" />
             <span className="mini-title">{this.state.subtitle6}</span>
             <br />
             <br />
@@ -117,11 +117,11 @@ class Article3 extends Component {
 
             <h2 className="subtopic">{this.state.imageText7}</h2>
             <br />
-            <img src={uberbonus} alt="print uber"/>
+            <img src={uberbonus} alt="print uber" />
 
             <h2 className="subtopic">{this.state.imageText8}</h2>
             <br />
-            <img src={uberbonus2} alt="print uber"/>
+            <img src={uberbonus2} alt="print uber" />
           </div>
           <img className="div-bar" src={divBar} />
           <h1 className="topic">Leia Também</h1>

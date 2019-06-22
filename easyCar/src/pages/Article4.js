@@ -46,6 +46,8 @@ class Article4 extends Component {
                     <meta property="og:type" content="article" />
                     <meta property="og:site_name" content="Vida no Asfalto" />
                     <meta property="article:publisher" content="https://www.facebook.com/vidanoasfalto" />
+                    <link rel="canonical" href="https://www.vidanoasfalto.com.br/artigos/e-assim-que-eu-lavo-meu-carro" />
+
 
                 </MetaTags>
                 <HeroTitle title={this.state.title} subtitle={this.state.subtitle}></HeroTitle>

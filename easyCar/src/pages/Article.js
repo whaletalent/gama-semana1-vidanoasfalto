@@ -62,7 +62,7 @@ class Article extends Component {
                     <div className="article-content">
                         <p className="text-content">{this.state.textContent1}</p><br />
                         <p className="text-content">{this.state.textContent1meio}</p><br />
-                        <img className="imagem" src={mapRoad} alt="mapa da estrada" /><br />
+                        <img className="imagem" src={mapRoad} alt="Dicas para evitar imprevistos durante a viagem" /><br />
                         <FormDownload
                             title="Quer fazer uma checklist para a sua próxima viagem?"
                             subtitle="Baixe a nossa checklist gratuita e se prepare com segurança para o seu próximo destino (esse artigo continua após nossa chamada para o conteúdo especial)"
@@ -71,10 +71,10 @@ class Article extends Component {
                         <h2 className="subtopic">{this.state.topic1}</h2><br />
                         <p className="text-content">{this.state.textContent2}</p><br />
                         <h5><span className="subtopic">1 - Não esqueça seu estepe!</span><br /><span className="text-content">{this.state.topic2}</span></h5><br />
-                        <h5><span className="subtopic">2 - Verifique a existência de bolhas.</span><br /><span className="text-content">{this.state.topic3}</span><br /><br /><img className="imagem" src="https://i.makeagif.com/media/7-29-2015/VERCQU.gif" alt="gif pneu estourando"/></h5><br />
-                        <h5><span className="subtopic">3 - Seja justo com a banda de rodagem.</span><br /><span className="text-content">{this.state.topic4}</span><br /><br /><img className="imagem" src="https://i.makeagif.com/media/5-27-2014/jP2cO3.gif" alt="gif homem careca"/></h5><br />
+                        <h5><span className="subtopic">2 - Verifique a existência de bolhas.</span><br /><span className="text-content">{this.state.topic3}</span><br /><br /><img className="imagem" src="https://i.makeagif.com/media/7-29-2015/VERCQU.gif" alt="Verifique a existência de bolhas"/></h5><br />
+                        <h5><span className="subtopic">3 - Seja justo com a banda de rodagem.</span><br /><span className="text-content">{this.state.topic4}</span><br /><br /><img className="imagem" src="https://i.makeagif.com/media/5-27-2014/jP2cO3.gif" alt="Seja justo com a banda de rodagem"/></h5><br />
                         <h5 className="text-content"><span className="subtopic">Lembre-se:</span> <br />{this.state.textContent3}</h5><br /><br />
-                        <img className="imagem" src="https://i.makeagif.com/media/6-09-2017/G-ouPi.gif" alt="gif Jim Carrey no carro"/><br />
+                        <img className="imagem" src="https://i.makeagif.com/media/6-09-2017/G-ouPi.gif" alt="Respeite a quantidade dos passageiros dentro do veículo"/><br />
                         <h2 className="subtopic">{this.state.topic5}</h2><br />
                         <p className="text-content">{this.state.textContent4}</p><br />
                         <h5><span className="subtopic">1 - Nas rodas de aço.</span><br /><br /><span className="text-content">{this.state.topic3}</span></h5><br />

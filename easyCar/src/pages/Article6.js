@@ -41,7 +41,7 @@ class Article6 extends Component {
                     <meta property="og:type" content="article" />
                     <meta property="og:site_name" content="Vida no Asfalto" />
                     <meta property="article:publisher" content="https://www.facebook.com/vidanoasfalto" />
-
+                    <link rel="canonical" href="https://www.vidanoasfalto.com.br/artigos/a-tendencia-dos-seguros-digitais" />
                 </MetaTags>
                 <HeroTitle title={this.state.title} subtitle={this.state.subtitle}></HeroTitle>
                 <section className="page-content">
