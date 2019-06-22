@@ -64,14 +64,14 @@ class Form extends React.Component {
                   id="imputLead"
                   type="text"
                   ref="name"
-                  placeholder="Nome"
+                  placeholder="NOME"
                   required
                 />
                 <Input
                   id="imputLead"
                   type="text"
                   ref="lastName"
-                  placeholder="Sobrenome"
+                  placeholder="SOBRENOME"
                   required
                 />
 
@@ -79,7 +79,7 @@ class Form extends React.Component {
                   id="imputLead"
                   type="email"
                   ref="email"
-                  placeholder="email@exemplo.com"
+                  placeholder="EMAIL@EXEMPLO.COM.BR"
                   required
                 />
                 {/* <Field horizontal>
