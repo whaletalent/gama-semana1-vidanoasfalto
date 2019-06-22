@@ -6,6 +6,7 @@ import PostCards from '../components/PostCards'
 import CardImage from '../components/CardImage'
 import ContainerForm from '../components/ContainerForm'
 import FormDownload from '../components/FormDownload';
+import MetaTags from 'react-meta-tags';
 
 class Feed extends Component {
     constructor(props) {
@@ -33,6 +34,16 @@ class Feed extends Component {
     render() {
         return (
             <Fragment>
+                <MetaTags>
+                    <title>Home</title>
+                    <meta id="meta-description" name="description" content="Conheça nossos Artigos" />
+                    <meta id="og-title" property="og:title" content="Home" />
+                    <meta property="og:locale" content="pt_BR" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:site_name" content="Vida no Asfalto" />
+                    <meta property="article:publisher" content="https://www.facebook.com/vidanoasfalto" />
+
+                </MetaTags>
                 
                     <div className="feed">
                         <PostCards/>
