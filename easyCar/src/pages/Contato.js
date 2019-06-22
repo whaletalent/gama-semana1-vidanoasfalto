@@ -8,9 +8,10 @@ class Contato extends Component {
         return (
             <section>
                 <MetaTags>
-                    <title>Contato</title>
-                    <meta id="meta-description" name="description" content="Qualquer dúvida ou sugestão entre em contato conosco" />
-                    <meta id="og-title" property="og:title" content="Contato" />
+                    <title>Contato | Vida no Asfalto</title>
+                    <meta name="description" content="Entre em contato com a equipe do Vida no Asfalto. Será um prazer atender-lhe!" />
+                    
+
                     <meta property="og:locale" content="pt_BR" />
                     <meta property="og:type" content="article" />
                     <meta property="og:site_name" content="Vida no Asfalto" />

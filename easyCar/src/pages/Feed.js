@@ -35,9 +35,10 @@ class Feed extends Component {
         return (
             <Fragment>
                 <MetaTags>
-                    <title>Home</title>
-                    <meta id="meta-description" name="description" content="Conheça nossos Artigos" />
-                    <meta id="og-title" property="og:title" content="Home" />
+                <title>Vida no Asfalto – Seu pitstop do seu dia!</title>
+<meta name="description" content="Vida no Asfalto é o seu guia completo de dicas, novidades e tudo que você precisa saber para o seu carro!"/>
+<link rel="canonical" href="https://www.vidanoasfalto.com.br" />
+
                     <meta property="og:locale" content="pt_BR" />
                     <meta property="og:type" content="article" />
                     <meta property="og:site_name" content="Vida no Asfalto" />
